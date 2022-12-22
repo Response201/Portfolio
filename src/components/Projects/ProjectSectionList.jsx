@@ -1,14 +1,22 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import ButtonLottie from "../lotties/ButtonLottie";
 import { GetProjectForImage } from "./GetProjectForImage";
 import "./projectSectionList.css";
 import Tilty from "react-parallax-tilt";
+
+
+
+
+
+
 export const ProjectSectionList = ({ item }) => {
   const [clickLottie, setClickLottie] = useState(false);
   const [scale, setScale] = useState(1.03);
   const onClickBtn = () => {
     setClickLottie(true);
   };
+
+ 
 
   return (
     <Tilty
@@ -23,6 +31,9 @@ export const ProjectSectionList = ({ item }) => {
       glareColor="white"
       glarePosition="all"
       glareBorderRadius="13px"
+
+style={{backgroundColor:'blue'}}
+
     >
       <section className="imageAndUl___container">
         <GetProjectForImage item={item.imgName} />
@@ -47,19 +58,21 @@ export const ProjectSectionList = ({ item }) => {
       <ul
         style={{
           width: "100%",
+          height:'10%',
           position: "relative",
           color: "white",
           padding: "0",
           margin: "0",
           bottom: "0",
           display: "flex",
+          alignItems:'center',
           justifyContent: "space-around",
           listStyleType: "none",
           zIndex: "10"
         }}
       >
         {item.tech.map((item) => (
-          <li>{item} </li>
+          <li key={item}>{item} </li>
         ))}
       </ul>
     </Tilty>

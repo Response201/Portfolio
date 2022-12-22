@@ -1,19 +1,65 @@
 .container {
-  height: 100vh;
-  width: 100vw;
+  position: relative;
+  height: 22vw;
+  width: 22vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 20vw;
+  width: 20vw;
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: -1;
+  animation: blobValue 70s ease infinite;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgb(68, 68, 68);
 }
 
 .container___overlay {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.318);
   z-index: 0;
   backdrop-filter: blur(50px);
+}
+
+.blob___container {
+  position: relative;
+  padding: 25vh 25vh;
+  box-shadow: 1px 1px 15px rgb(102, 101, 101);
+}
+
+.blob {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+@keyframes blobValue {
+  0% {
+    border-radius: 38% 62% 74% 26% / 57% 62% 38% 43%;
+    transform: rotate(0deg);
+  }
+
+  33.33% {
+    border-radius: 42% 58% 39% 61% / 35% 31% 69% 65%;
+  }
+
+  66.66% {
+    border-radius: 50% 50% 34% 66% / 67% 70% 30% 33%;
+  }
+
+  100% {
+    border-radius: 30% 70% 56% 44% / 29% 49% 51% 71%;
+    transform: rotate(360deg);
+  }
 }

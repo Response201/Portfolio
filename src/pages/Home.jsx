@@ -1,8 +1,19 @@
 import React from 'react'
-
-const Home = () => {
+import { Background } from "../components/Background";
+const Home = ({color}) => {
   return (
-    <div>Home</div>
+    <section>
+
+
+
+
+<Background color={color} />
+
+
+
+
+
+    </section>
   )
 }
 

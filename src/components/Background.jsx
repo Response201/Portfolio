@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./background.css";
+
+
 export const Background = ({ color }) => {
   const [backgroundColor, setbackgroundColor] = useState(color);
   const canvasRef = useRef(null);
@@ -9,28 +11,25 @@ export const Background = ({ color }) => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-console.log(color)
-
-
-
+    console.log(color);
 
     // Skapa en array med partiklar
     const particles = [];
-    for (let i = 0; i < 10; i++) {
-let mix = ''
+    for (let i = 0; i < 5; i++) {
+      let mix = "";
 
-      if(color === 'rgb(253, 16, 199)'){
-        mix = `rgb(${Math.random() * 255}, ${color.slice(9, 11)} ,${color.slice(12, 16)})`
-       }else{
-
-        mix = `rgb(${color.slice(5, 7)} ,${Math.random() * 255}, ${color.slice(12, 16)})`
-
-       }
+      if (color === "rgb(253, 16, 199)") {
+        mix = `rgba(${Math.random() * 255 - 50}, 16 , 199, 0.2)`;
+      } else if (color === "rgb(0,0,0)") {
+        mix = `rgba(255,255,255,0.1)`;
+      } else if (color === "rgb(51, 255, 255)") {
+        mix = `rgba(51 , ${Math.random() * 255 - 50} , 255 , 0.2)`;
+      }
 
       particles.push({
         x: Math.random() * canvas.width, // slumpmässig x-position
         y: Math.random() * canvas.height, // slumpmässig y-position
-        radius: Math.random() * 20 + 30, // slumpmässig radius (10-70)
+        radius: Math.random() * 80 + 10, // slumpmässig radius (10-70)
         color: mix, // slumpmässig färg ifrån valt them(rosa, ljus, blå ect)
         velocityX: -1 + 1, // slumpmässig x-hastighet (-1 till 1)
         velocityY: Math.random() * -1 + 1 // slumpmässig y-hastighet (-1 till 1)
@@ -72,13 +71,19 @@ let mix = ''
   }, [color]); //
 
   return (
-    <>
-      <canvas
-        ref={canvasRef}
-        className="container"
-        style={{ backgroundColor: `${backgroundColor}` }}
-      ></canvas>
-      <div className="container___overlay"></div>
-    </>
+    <section className="container">
+      <section className="content" > 
+
+      <section className="blob___container">
+      
+        <canvas
+          ref={canvasRef}
+          className="blob"
+          style={{ backgroundColor: `${backgroundColor}` }}
+        ></canvas>
+        <div className="container___overlay"></div>
+      </section>
+      </section>
+    </section>
   );
 };

@@ -2,9 +2,15 @@
   --test: #a3a3a300;
 }
 
-[data-theme="dark"] {
+[data-theme="turquoise"] {
   --test: #1f1f1f00;
 }
+
+
+[data-theme="black"] {
+  --test: #1f1f1f00;
+}
+
 
 *{
   -ms-overflow-style: none;  

@@ -1,6 +1,22 @@
+
+
+
+.projectSection_grid_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2vh;
+  height: clamp(1200px, 90%, 95%);
+  overflow-y: scroll;
+ justify-content: center;
+justify-items: center;
+ align-items: center;
+}
+
+
+
 .ProjectSection____container {
-  height: clamp(50px, 90%, 350px);
-  background-color: rgba(116, 135, 129, 0.361);
+  height: clamp(250px, 90%, 320px);
   box-shadow: 1px 1px 5px black;
   display: flex;
   flex-direction: column;
@@ -11,42 +27,27 @@
   transition: 0.2s ease-in;
   border-radius: 15px;
   overflow: hidden;
-}
 
-.ProjectSection____container:nth-child(odd){
-animation: fadeInBottom ease 3s;
+  animation: fadeIn ease 5s;
 
 }
-.ProjectSection____container:nth-child(even){
-  animation: fadeInTop ease 4s;
-  
-  }
 
-@keyframes fadeInBottom {
+
+
+@keyframes fadeIn {
   from {
     opacity: 0;
-    margin-top: 50%;
+   
   }
 
   to {
     opacity: 1;
-    margin-top: 0%;
+  
   }
   
 }
 
-@keyframes fadeInTop{
-  from {
-    opacity: 0;
-    margin-top: -50%;
-  }
 
-  to {
-    opacity: 1;
-    margin-top: 0%;
-  }
-  
-}
 
 
 
@@ -130,4 +131,30 @@ a {
 .textLottieBtn____p p {
   width: 100%;
   text-align: center;
+}
+
+
+
+@media (min-width:768px) {
+
+
+
+
+
+
+
+  .projectSection_grid_container {
+
+    height: 100%;
+    min-height: 600px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+ 
+
+  }
+
+
+ 
+
+  
 }
