@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GrGithub, GrFacebook, GrMail } from "react-icons/gr";
+import { GrGithub, GrLinkedin, GrMail } from "react-icons/gr";
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import { useSnapshot } from "valtio";
@@ -7,6 +7,7 @@ import { ThemeSwitch } from "./components/lotties/ThemeSwitch";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import store from "./store";
+import SendMail from "./pages/SendMail";
 
 export const App = () => {
   const [color, setColor] = useState("");
@@ -36,15 +37,15 @@ export const App = () => {
           </Link>
         </div>
         <div className="link___icons_container">
-          <a>
+          <Link to="/mail">
             <GrMail />
-          </a>
+          </Link>
 
-          <a>
+          <a href="https://www.linkedin.com/in/jessicatech" target="_blank">
             {" "}
-            <GrFacebook />{" "}
+            <GrLinkedin />{" "}
           </a>
-          <a>
+          <a href="https://github.com/Response201" target="_blank">
             {" "}
             <GrGithub />{" "}
           </a>
@@ -68,6 +69,7 @@ export const App = () => {
         <Routes>
           <Route exact path="/" element={<Home color={color} />}></Route>
           <Route exact path="/projects" element={<Projects />}></Route>
+          <Route exact path="/mail" element={<SendMail />}></Route>
         </Routes>
       </section>
     </article>

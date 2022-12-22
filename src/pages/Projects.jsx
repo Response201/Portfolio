@@ -12,7 +12,7 @@ const Projects = () => {
     {
       name: "grabacoffee",
       url: "https://grabacoffee.netlify.app/",
-      tech: ["CSS", "JavaScript", "React", "API"],
+      tech: ["SCSS", "JavaScript", "React", "API"],
       imgName: "coffee"
     },
     {

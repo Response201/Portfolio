@@ -32,7 +32,7 @@ export const ProjectSectionList = ({ item }) => {
       glarePosition="all"
       glareBorderRadius="13px"
 
-style={{backgroundColor:'blue'}}
+style={{backgroundColor:'rgba(0,0,0,0.3)'}}
 
     >
       <section className="imageAndUl___container">
