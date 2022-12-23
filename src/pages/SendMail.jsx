@@ -1,20 +1,11 @@
 import React, { useState } from "react";
 
 
-
-
 const SendMail = () => {
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
   const [adress, setAdress] = useState("");
 const url = `${process.env.REACT_APP_URL}`
-
-
-
-
-
-
-console.log(url)
 
 
 
