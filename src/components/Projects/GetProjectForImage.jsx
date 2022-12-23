@@ -4,7 +4,7 @@ import weather from "../../assets/images/weather.jpg";
 import todo from "../../assets/images/todo.png";
 import foodnary from "../../assets/images/foodnary.png";
 export const GetProjectForImage = ({ item }) => {
-  const [image, setImage] = useState('');
+  const [image, setImage] = useState('')
 
   useEffect(() => {
     if (item === "weather") {
