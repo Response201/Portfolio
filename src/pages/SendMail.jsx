@@ -5,7 +5,7 @@ const SendMail = () => {
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
   const [adress, setAdress] = useState("");
-const url = `${process.env.REACT_APP_URL}`
+const url = `http://backend-recipe-ect.herokuapp.com/send`
 
 
 
