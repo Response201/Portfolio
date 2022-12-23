@@ -4,13 +4,13 @@ const SendMail = () => {
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
   const [adress, setAdress] = useState("");
-  const url = `${import.meta.env.VITE_URL}`;
+
 
   // Denna funktion anropas när formuläret skickas
   const handleSubmit = (e) => {
     e.preventDefault();
     if ((message, adress, subject)) {
-      fetch(url, {
+      fetch(`${process.env.REACT_APP_URL}`, {
         method: "POST",
         headers: {
           "Content-type": "application/json"
