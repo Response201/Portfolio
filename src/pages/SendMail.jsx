@@ -1,16 +1,45 @@
 import React, { useState } from "react";
 
+
+
+
 const SendMail = () => {
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
   const [adress, setAdress] = useState("");
+const url = `${process.env.REACT_APP_URL}`
+
+
+
+
+
+
+console.log(url)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   // Denna funktion anropas när formuläret skickas
   const handleSubmit = (e) => {
     e.preventDefault();
     if ((message, adress, subject)) {
-      fetch(`${process.env.REACT_APP_URL}`, {
+      fetch(url, {
         method: "POST",
         headers: {
           "Content-type": "application/json"
