@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import coffee from "../../assets/images/coffee.png";
+/* import coffee from "../../assets/images/coffee.png"; */
 import weather from "../../assets/images/weather.jpg";
 import todo from "../../assets/images/todo.png";
 import foodnary from "../../assets/images/foodnary.png";
+import coff from '../../assets/images/coffee.png'
+
 export const GetProjectForImage = ({ item }) => {
   const [image, setImage] = useState('')
 
@@ -10,8 +12,8 @@ export const GetProjectForImage = ({ item }) => {
     if (item === "weather") {
       setImage(weather);
     }
-    if (item === "coffee") {
-      setImage(coffee);
+    if (item === "coff") {
+      setImage(coff);
     }
     if (item === "todo") {
       setImage(todo);
