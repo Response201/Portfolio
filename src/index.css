@@ -1,5 +1,5 @@
 :root {
-  --test: #a3a3a300;
+  --test: #05050500;
 }
 
 [data-theme="turquoise"] {
@@ -27,4 +27,5 @@ body {
   margin: 0 auto;
   padding: 0 auto;
   overflow: hidden;
+  
 }

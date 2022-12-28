@@ -1,19 +1,27 @@
 import React from 'react'
 import { Background } from "../components/Background";
+import './home.css'
 const Home = ({color}) => {
   return (
-    <section>
+    <article className='home___container'>
+
+
+<section className='home___header_container'> 
+<section className='header___content'> 
+<h1>Frontend devoloper</h1>
+<p>with a strong focus on user experience and modern technologies</p>
+</section>
+</section>
+
+<section className='home___background_blob_container'> <Background color={color} /></section>
 
 
 
 
-<Background color={color} />
 
 
 
-
-
-    </section>
+    </article>
   )
 }
 

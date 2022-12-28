@@ -17,21 +17,17 @@ export const App = () => {
 
   return (
     <article className="App">
-      <section className="link___section_top">
-        <Link to="/projects"> Projects </Link>
-        <Link to="/"> Home </Link>
-      </section>
       <section className="link___section_bottom">
         <Link to="/projects">
           {" "}
-          <p> About </p>{" "}
+          <p> About Me</p>{" "}
         </Link>
         <Link to="/"> My skills </Link>
       </section>
 
-      <section className="link___section_left">
-        <div className="link___left_a_container">
-          <Link to="/" className="link___left_a">
+      <section className="link___section_rigth">
+        <div className="link___rigth_a_container">
+          <Link to="/" className="link___rigth_a">
             {" "}
             Work{" "}
           </Link>
@@ -54,11 +50,17 @@ export const App = () => {
         </div>
       </section>
 
-      <section className="link___section_rigth">
-        <div className="link___rigth_a">
-          <Link to="/"> My skills </Link>
+      <section className="link___section_left">
+        <div className="link___left_a_container_first_p">
+          <Link to="/" className="link___left_a">
+            Home
+          </Link>
         </div>
-        <div></div>
+        <div className="link___left_a_container_second_p">
+          <Link to="/projects" className="link___left_a">
+            Projects
+          </Link>
+        </div>
       </section>
 
       <section className="switch_container">

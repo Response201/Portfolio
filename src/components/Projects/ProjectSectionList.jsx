@@ -27,12 +27,12 @@ export const ProjectSectionList = ({ item }) => {
       scale={scale}
       transitionSpeed={1000}
       glareEnable={true}
-      glareMaxOpacity={0.2}
+      glareMaxOpacity={0.3}
       glareColor="white"
       glarePosition="all"
       glareBorderRadius="13px"
 
-style={{backgroundColor:'rgba(0,0,0,0.3)'}}
+
 
     >
       <section className="imageAndUl___container">
@@ -48,33 +48,14 @@ style={{backgroundColor:'rgba(0,0,0,0.3)'}}
                 setClickLottie={setClickLottie}
               />
               <div className="textLottieBtn____p">
-                <p onMouseEnter={onClickBtn}> Go to {item.name} </p>
+                <p onMouseEnter={onClickBtn}>{item.name} </p>
               </div>
             </a>
           </div>
         </section>
       </section>
 
-      <ul
-        style={{
-          width: "100%",
-          height:'10%',
-          position: "relative",
-          color: "white",
-          padding: "0",
-          margin: "0",
-          bottom: "0",
-          display: "flex",
-          alignItems:'center',
-          justifyContent: "space-around",
-          listStyleType: "none",
-          zIndex: "10"
-        }}
-      >
-        {item.tech.map((item) => (
-          <li key={item}>{item} </li>
-        ))}
-      </ul>
+    
     </Tilty>
   );
 };

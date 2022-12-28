@@ -9,30 +9,23 @@
   justify-content: center;
   align-items: center;
 }
-.link___section_top a,
+
 .link___section_bottom a,
 .link___section_left a,
 .link___section_rigth a {
   all: unset;
+  cursor: default;
   font-size: clamp(16px, 5vw, 25px);
   letter-spacing: 3px;
 }
-.link___section_top a:hover,
+
 .link___section_bottom a:hover,
 .link___section_rigth a:hover {
   transform: scale(95%);
   transition: ease-in 0.2s;
 }
 
-.link___section_top {
-  height: 5vh;
-  width: 70vw;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+
 .link___section_bottom {
   height: 5vh;
   width: 70vw;
@@ -44,29 +37,28 @@
 }
 
 /* Icons in left section */
-.link___section_left {
+.link___section_rigth {
   height: 100vh;
   width: 10vw;
   max-width: 80px;
   position: absolute;
-  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
 
-.link___left_a_container {
-  height: 30%;
+.link___rigth_a_container {
+  height: 35%;
 }
-.link___left_a_container a {
+.link___rigth_a_container a {
   writing-mode: vertical-rl;
-  transform: rotate(-180deg);
   transition: ease-in 0.2s;
 }
 
-.link___left_a_container a:hover {
-  transform: rotate(-180deg) scale(95%);
+.link___rigth_a_container a:hover {
+  transform: scale(95%);
 }
 .link___icons_container {
   height: 35%;
@@ -91,21 +83,41 @@
   width: 2px;
 }
 
-.link___section_rigth {
+/* rigth */
+
+.link___section_left {
   height: 100vh;
   width: 10vw;
   max-width: 80px;
   position: absolute;
-  right: 0;
-  writing-mode: vertical-rl;
+  left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.link___rigth_a {
-  height: 65%;
+.link___left_a_container_first_p{
+  height: 35%;
+
+}
+
+.link___left_a_container_second_p{
+  height: 35%;
+  display: flex;
+  align-items: flex-start;
+
+
+}
+
+.link___left_a_container_first_p a, .link___left_a_container_second_p a {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  transition: ease-in 0.2s;
+}
+
+.link___left_a_container_first_p a:hover, .link___left_a_container_second_p a:hover {
+  transform: scale(95%) rotate(180deg);
 }
 
 /* switch */
