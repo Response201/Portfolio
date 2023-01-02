@@ -14,6 +14,7 @@ export const ProjectSectionList = ({ item }) => {
   const [scale, setScale] = useState(1.03);
   const onClickBtn = () => {
     setClickLottie(true);
+ 
   };
 
  

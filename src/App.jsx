@@ -13,7 +13,7 @@ export const App = () => {
   const [color, setColor] = useState("");
   const snap = useSnapshot(store);
 
-  console.log(snap.colors);
+
 
   return (
     <article className="App">
@@ -67,7 +67,7 @@ export const App = () => {
         <ThemeSwitch setColor={setColor} color={color} />
       </section>
 
-      <section style={{ height: "90vh", width: "80vw", overflow: "scroll" }}>
+      <section style={{ height: "90vh", width: "80vw", overflowY: "scroll" }}>
         <Routes>
           <Route exact path="/" element={<Home color={color} />}></Route>
           <Route exact path="/projects" element={<Projects />}></Route>

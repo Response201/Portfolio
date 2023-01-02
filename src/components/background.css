@@ -30,6 +30,9 @@
   left: 0;
   z-index: 0;
   backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  -moz-backdrop-filter: blur(50px);
+  -ms--backdrop-filter: blur(50px);
 }
 
 .blob___container {

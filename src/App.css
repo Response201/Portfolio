@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .link___section_bottom a,

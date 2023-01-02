@@ -1,20 +1,30 @@
 :root {
   --test: #05050500;
+  --form-input-valid: #c003bd;
+  --form-input-not-valid: #6c016a;
+  --shadow: #5801567f;
+  --shadow-border: #f9d7f9;
 }
 
 [data-theme="turquoise"] {
   --test: #1f1f1f00;
+  --form-input-valid: rgb(36, 169, 156);
+  --form-input-not-valid: #003c3b;
+  --shadow: #003c3b93;
+  --shadow-border: #d3d9d9;
 }
-
 
 [data-theme="black"] {
   --test: #1f1f1f00;
+  --form-input-valid: #717171;
+  --form-input-not-valid: #121212;
+  --shadow: #12121280;
+  --shadow-border: #dedede80;
 }
 
-
-*{
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 *::-webkit-scrollbar {
@@ -27,5 +37,4 @@ body {
   margin: 0 auto;
   padding: 0 auto;
   overflow: hidden;
-  
 }
