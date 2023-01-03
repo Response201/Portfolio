@@ -4,14 +4,17 @@
   width: 100%;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .email___form {
-  height: 90%;
-  width: 96%;
-  padding-left: 2%;
+  margin-top: 10%;
+  height: 80%;
+  max-height: 700px;
+  width: 95%;
+  max-width: 550px;
+  padding-left: 1%;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
@@ -30,6 +33,7 @@ label {
 input[type="text"] {
   height: 40%;
   min-height: 30px;
+  width: 95%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -39,6 +43,7 @@ input[type="text"] {
 }
 textarea {
   height: 100%;
+  width: 95%;
   resize: none;
   margin: 5px 0;
   padding: 10px 5px;
@@ -172,9 +177,14 @@ textarea:invalid {
 }
 
 @media (min-width: 900px) {
+  .email___form_container {
+    align-items: center;
+  }
+
   .email___form {
-    height: 85%;
-    width: 50%;
+    margin: 0;
+    max-height: 700px;
+    max-width: 600px;
     padding-left: 0%;
   }
 }
