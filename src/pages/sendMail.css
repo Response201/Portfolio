@@ -10,6 +10,7 @@
 .email___form {
   margin-top: 10%;
   height: 80%;
+  min-height: 450px;
   max-height: 700px;
   width: 95%;
   max-width: 550px;
@@ -31,13 +32,13 @@ label {
 
 input[type="text"] {
   height: 40%;
-  min-height: 30px;
+  min-height: 25px;
   width: 95%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin-top: 5px;
-  padding: 0 5px;
+  padding: 0 2%;
   background-color: transparent;
 }
 textarea {
@@ -45,7 +46,7 @@ textarea {
   width: 95%;
   resize: none;
   margin: 5px 0;
-  padding: 10px 5px;
+  padding: 10px 2%;
   background-color: transparent;
 }
 
