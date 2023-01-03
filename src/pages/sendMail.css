@@ -25,12 +25,12 @@
   background: linear-gradient(
     90deg,
     var(--primary-two) 0%,
-    var(--primary-three)5%,
+    var(--primary-three) 5%,
     var(--primary-one) 50%,
     var(--complementary) 100%
   );
-  height: 200vw;
-  width: 200vw;
+  height: 300%;
+  width: 300%;
   top: -100%;
   left: -100%;
   animation: o-rotate-360 linear 20s infinite;
@@ -51,7 +51,6 @@
   background-color: var(--bg-form);
   border-radius: 5px;
   border: 0.5px solid var(--shadow-border);
-  
 
   z-index: 10;
 }
@@ -74,7 +73,6 @@ input[type="text"] {
   margin-top: 5px;
   padding: 0 1%;
   background-color: transparent;
- 
 }
 textarea {
   letter-spacing: 0.15em;
@@ -83,7 +81,7 @@ textarea {
   width: 95%;
   resize: none;
   margin: 5px 0;
-  padding: 1% ;
+  padding: 1%;
   background-color: transparent;
 }
 

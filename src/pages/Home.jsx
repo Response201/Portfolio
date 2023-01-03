@@ -4,7 +4,7 @@ import './home.css'
 const Home = ({color}) => {
   return (
     <article className='home___container'>
-
+<section className='home___content'>
 
 <section className='home___header_container'> 
 <section className='header___content'> 
@@ -13,11 +13,12 @@ const Home = ({color}) => {
 </section>
 </section>
 
-<section className='home___background_blob_container'> <Background color={color} /></section>
+<section className='home___background_blob_container'> <Background color={color} />
+</section>
 
 
 
-
+</section>
 
 
 
