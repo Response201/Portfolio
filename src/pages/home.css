@@ -5,8 +5,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  height: 85vh;
-  min-height: 70%;
+  height: 90vh;
   overflow: hidden;
 }
 
@@ -46,15 +45,7 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  /* Home */
 
-  .home___container {
-   
-    height: 90vh;
-  }
-
-}
 
 
 @media (min-width: 950px) {
