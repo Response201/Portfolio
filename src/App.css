@@ -1,7 +1,7 @@
 .App {
   background-color: var(--test);
   height: 99.6vh;
-  min-height: 500px;
+  min-height: 400px;
   width: 99vw;
   padding: 0.2vh 0.5vw;
   display: flex;
