@@ -33,10 +33,14 @@
 
 body {
   height: 100vh;
-  min-height: 100vh;
+  min-height: 500px;
   min-height: -webkit-fill-available;
   width: 100%;
   margin: 0 auto;
   padding: 0 auto;
   overflow: hidden;
+}
+
+html {
+  height: -webkit-fill-available;
 }
