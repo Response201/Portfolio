@@ -1,7 +1,7 @@
 .App {
   background-color: var(--test);
-  height: 100%;
-  min-height: 99.6vh;
+  height: 99.6vh;
+  min-height: 400px;
   width: 99vw;
   padding: 0.2vh 0.5vw;
   display: flex;
@@ -29,12 +29,14 @@
 
 .link___section_bottom {
   height: 5vh;
-  width: 70vw;
+  width: 80vw;
   position: absolute;
   bottom: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
 }
 
 /* Icons in left section */
@@ -48,6 +50,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+ 
 }
 
 .link___rigth_a_container {
@@ -96,6 +99,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+ 
 }
 
 .link___left_a_container_first_p{
