@@ -3,7 +3,6 @@
   height: 90vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
-  gap: 2vh;
   overflow-y: scroll;
   place-items: center;
   justify-content: center;
