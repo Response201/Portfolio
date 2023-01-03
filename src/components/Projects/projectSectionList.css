@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
   gap: 2vh;
- min-height: 500px;
   overflow-y: scroll;
   place-items: center;
   justify-content: center;
