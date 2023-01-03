@@ -1,5 +1,5 @@
-.App {
-  background-color: var(--test);
+.App{
+
   height: 99.6vh;
   width: 99vw;
   padding: 0.2vh 0.5vw;
@@ -8,6 +8,11 @@
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  font-family: 'Raleway Dots';
+  font-weight: 600;
+  color: var(--text);
+  background-color: var(--bg);
+  z-index: -1000000;
 }
 
 .link___section_bottom a,
@@ -15,7 +20,8 @@
 .link___section_rigth a {
   all: unset;
   cursor: default;
-  font-size: clamp(16px, 5vw, 25px);
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  font-weight: 800;
   letter-spacing: 3px;
 }
 
@@ -24,7 +30,6 @@
   transform: scale(95%);
   transition: ease-in 0.2s;
 }
-
 
 .link___section_bottom {
   height: 5vh;
@@ -35,31 +40,30 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color:  var(--bg);
   z-index: 10;
 }
 
-.link___section_bottom p{
-height: 50%;
+.link___section_bottom p {
+  height: 50%;
 }
 
 /* Icons in rigth section */
 .link___section_rigth {
   height: 100vh;
   width: 10vw;
-  max-width: 80px;
+  max-width: 50px;
   position: absolute;
   right: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
- 
 }
 
 .link___rigth_a_container {
   height: 35%;
-  width: 50%
+  width: 50%;
 }
 .link___rigth_a_container a {
   writing-mode: vertical-rl;
@@ -76,18 +80,21 @@ height: 50%;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+ 
 }
 .link___icons_container a {
   font-size: clamp(10px, 5vw, 25px);
+
   transition: ease-in 0.2s;
 }
 .link___icons_container a:hover {
   transform: scale(90%);
+  filter:drop-shadow(0px 0px 1.5px var(--text-primary));
 }
 
 .line {
   border: 0;
-  background-color: #000;
+  background-color: var(--text);
   height: 30%;
   width: 2px;
 }
@@ -97,38 +104,36 @@ height: 50%;
 .link___section_left {
   height: 100vh;
   width: 10vw;
-  max-width: 80px;
+  max-width: 50px;
   position: absolute;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
- 
 }
 
-.link___left_a_container_first_p{
+.link___left_a_container_first_p {
   height: 35%;
   width: 50%;
-
 }
 
-.link___left_a_container_second_p{
+.link___left_a_container_second_p {
   height: 35%;
   width: 50%;
   display: flex;
   align-items: flex-start;
-
-
 }
 
-.link___left_a_container_first_p a, .link___left_a_container_second_p a {
+.link___left_a_container_first_p a,
+.link___left_a_container_second_p a {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   transition: ease-in 0.2s;
 }
 
-.link___left_a_container_first_p a:hover, .link___left_a_container_second_p a:hover {
+.link___left_a_container_first_p a:hover,
+.link___left_a_container_second_p a:hover {
   transform: scale(95%) rotate(180deg);
 }
 

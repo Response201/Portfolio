@@ -1,21 +1,22 @@
 .container {
   position: relative;
-  height: 22vw;
-  width: 22vw;
-  min-height: 250px;
-  min-width: 250px;
+  height: 20vw;
+  width: 20vw;
+  min-height: 230px;
+  min-width: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .content {
-  height: 20vw;
-  width: 20vw;
-  min-height: 240px;
-  min-width: 240px;
+  height: 18vw;
+  width: 18vw;
+  min-height: 230px;
+  min-width: 230px;
   position: absolute;
-  z-index: -1;
+ 
+  z-index: 0;
   animation: blobValue 70s ease infinite;
   overflow: hidden;
   box-shadow: 0 0 5px rgb(68, 68, 68);
@@ -37,11 +38,12 @@
 
 .blob___container {
   position: relative;
-  padding: 25vh 25vh;
+  padding: 23vh 23vh;
   box-shadow: 1px 1px 15px rgb(102, 101, 101);
 }
 
 .blob {
+  background-color: var(--complementary);
   height: 100%;
   width: 100%;
   position: absolute;

@@ -7,30 +7,64 @@
   justify-content: center;
 }
 
-.email___form {
+.email___section {
   margin-top: 10%;
+  position: relative;
   height: 80%;
   min-height: 450px;
   max-height: 700px;
   width: 95%;
   max-width: 550px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.email___section_rainbow {
+  position: absolute;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary-two) 0%,
+    var(--primary-three)5%,
+    var(--primary-one) 50%,
+    var(--complementary) 100%
+  );
+  height: 200vw;
+  width: 200vw;
+  top: -100%;
+  left: -100%;
+  animation: o-rotate-360 linear 20s infinite;
+  opacity: 70%;
+}
+
+.email___form {
+  bottom: 0.3%;
+  left: 0.3%;
+  top: 0.3%;
+  right: 0.3%;
+  position: absolute;
   padding-left: 1%;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   grid-template-rows: repeat(24, 1fr);
-  background-color: rgb(236, 236, 236);
+  background-color: var(--bg-form);
   border-radius: 5px;
-  box-shadow: -3px -3px 5px var(--shadow) inset,
-    3px 3px 10px rgb(255, 255, 255) inset;
-  border: 1px solid var(--shadow-border);
+  border: 0.5px solid var(--shadow-border);
+  
+
+  z-index: 10;
 }
 
 label {
-  font-size: large;
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 
 input[type="text"] {
+  letter-spacing: 0.15em;
+  font-size: 0.9rem;
+  font-weight: 500;
   height: 40%;
   min-height: 25px;
   width: 95%;
@@ -38,15 +72,18 @@ input[type="text"] {
   white-space: nowrap;
   text-overflow: ellipsis;
   margin-top: 5px;
-  padding: 0 2%;
+  padding: 0 1%;
   background-color: transparent;
+ 
 }
 textarea {
+  letter-spacing: 0.15em;
+  font-size: 1.1rem;
   height: 100%;
   width: 95%;
   resize: none;
   margin: 5px 0;
-  padding: 10px 2%;
+  padding: 1% ;
   background-color: transparent;
 }
 
@@ -89,13 +126,13 @@ textarea:invalid,
   border: 1px solid var(--form-input-not-valid);
 }
 
-.notValid,
-.subject___input:invalid {
+.notValid:focus,
+.subject___input:invalid:focus {
   background: url("../assets/image/no.svg") no-repeat 99% 50%;
   background-size: 25px;
 }
 
-textarea:invalid {
+textarea:invalid:focus {
   background: url("../assets/image/no.svg") no-repeat 99% 2%;
   background-size: 25px;
 }
@@ -181,10 +218,20 @@ textarea:invalid {
     align-items: center;
   }
 
-  .email___form {
+  .email___section {
     margin: 0;
     max-height: 700px;
     max-width: 600px;
     padding-left: 0%;
+  }
+}
+
+@keyframes o-rotate-360 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

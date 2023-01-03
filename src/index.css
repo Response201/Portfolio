@@ -1,25 +1,49 @@
 :root {
-  --test: #05050500;
-  --form-input-valid: #c003bd;
-  --form-input-not-valid: #6c016a;
+  --bg: #d8d8d8;
+  --bg-form: #e7e6e6f3;
+  --form-input-valid: rgb(192, 17, 151);
+  --form-input-not-valid: rgb(116, 9, 91);
   --shadow: #5801567f;
   --shadow-border: #f9d7f9;
+  --primary-one: rgb(254, 59, 209);
+  --primary-two: rgb(244, 135, 219);
+  --primary-three: rgb(248, 236, 245);
+  --complementary: rgb(47, 255, 0);
+  --text: #1c7e1c;
+  --text-primary: rgb(243, 19, 190);
 }
 
 [data-theme="turquoise"] {
-  --test: #1f1f1f00;
-  --form-input-valid: rgb(36, 169, 156);
-  --form-input-not-valid: #003c3b;
+  --bg: #1f1f1f;
+  --bg-form: #313131f0;
+  --form-input-valid: rgb(38, 123, 125);
+  --form-input-not-valid: rgb(81, 213, 227);
   --shadow: #003c3b93;
   --shadow-border: #d3d9d9;
+  --complementary: rgb(255, 47, 0);
+  --primary-one: turquoise;
+  --primary-two: rgb(145, 218, 210);
+  --primary-three: rgb(216, 223, 222);
+
+  --text: rgb(204, 98, 62);
+  --text-primary: rgb(60, 186, 188);
+
+  /* rgb(60, 186, 188); */
 }
 
 [data-theme="black"] {
-  --test: #1f1f1f00;
+  --bg: #eeeeee;
+  --bg-form: #eeeeeef1;
   --form-input-valid: #717171;
   --form-input-not-valid: #121212;
   --shadow: #12121280;
   --shadow-border: #dedede80;
+  --primary-one: black;
+  --primary-two: rgb(138, 137, 137);
+  --primary-three: rgb(240, 239, 239);
+  --complementary: rgb(82, 82, 81);
+  --text: rgb(48, 48, 48);
+  --text-primary: rgb(156, 156, 156);
 }
 
 * {
@@ -33,12 +57,13 @@
 
 body {
   height: 100vh;
-  min-height: 500px;
+  min-height: 100vh;
   min-height: -webkit-fill-available;
   width: 100%;
   margin: 0 auto;
   padding: 0 auto;
   overflow: hidden;
+  background-color: transparent;
 }
 
 html {

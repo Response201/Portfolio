@@ -1,7 +1,6 @@
 .switch___content {
   width: 20vw;
   max-width: 100px;
-  height: 1rem;
   padding-top: 5px;
   display: flex;
   justify-content: space-around;
@@ -9,35 +8,39 @@
 
 .switchBtn___content {
   position: relative;
-
+  overflow: hidden;
+  border-radius: 50%;
+  height:clamp(1.2em, 2vw, 1.5em);
+  width:clamp(1.2em, 2vw, 1.5em);
 }
 
 .switchBtn {
-  height:clamp(1.4em, 2vw, 1.8em);
-  width:clamp(1.4em, 2vw, 1.8em);
-  border-radius: 50%;
+z-index: 0;
+  height: 100%;
+  width: 100%;
   border: none;
-  overflow: hidden;
+  position: absolute;
+
 }
 
 .activeSwitch {
   background-color: transparent;
   border-radius: 50%;
-  height: clamp(1.5em, 2vw, 1.8em);
-  width: clamp(1.5em, 2vw, 1.8em);
+  height: clamp(1em, 2vw, 1em);
+  width: clamp(1em, 2vw, 1em);
   top: 0;
   position: absolute;
-  
+  overflow: hidden;
   
 }
 .notSwitch {
-
-  height: 150%;
-  width: 150%;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top:-0em;
   bottom: 0;
   left: -0em;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.721);
+  background-color: rgba(105, 105, 105, 0.72);
 }

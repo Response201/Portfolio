@@ -15,16 +15,18 @@ export const Background = ({ color }) => {
 
     // Skapa en array med partiklar
     const particles = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 15; i++) {
       let mix = "";
 
-      if (color === "rgb(253, 16, 199)") {
-        mix = `rgba(${Math.random() * 255 - 50}, 16 , 199, 0.4)`;
+      if (color === "rgb(201, 19, 159)") {
+        mix = `rgba(${Math.random() * 30 + 180}, 19 , 159, 1)`;
       } else if (color === "rgb(0,0,0)") {
         mix = `rgba(255,255,255,0.3)`;
       } else if (color === "rgb(51, 255, 255)") {
-        mix = `rgba(51 , ${Math.random() * 255 - 50} , 255 , 0.4)`;
+        mix = ` rgba(41 , ${Math.random() * 20 + 120} , 134 , 1)`;
       }
+
+     /* rgb(103, 10, 81) */
 
       particles.push({
         x: Math.random() * canvas.width, // slumpmässig x-position
@@ -79,7 +81,6 @@ export const Background = ({ color }) => {
         <canvas
           ref={canvasRef}
           className="blob"
-          style={{ backgroundColor: `${backgroundColor}` }}
         ></canvas>
         <div className="container___overlay"></div>
       </section>

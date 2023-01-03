@@ -66,7 +66,10 @@ const SendMail = () => {
 
   return (
     <article className="email___form_container"> 
+   
+   <section className="email___section"> 
     <form onSubmit={handleSubmit} className="email___form">
+
       <section className="adress___section">
         <label className={validEmail !== null ? "validText" : "notValidText"}>
           Epostadress:
@@ -93,7 +96,7 @@ const SendMail = () => {
           value={subject}
           onChange={(event) => setSubject(event.target.value)}
           className="subject___input"
-          maxLength={150}
+          maxLength={100}
           required
         />
       </section>
@@ -108,8 +111,10 @@ const SendMail = () => {
           onChange={(event) => setMessage(event.target.value)}
           className="message___input"
           minLength={10}
+          maxLength={1500}
           required
         />
+        
       </section>
       <section
         className={showBtn ? "submit___input" : "submit___input_hidden"}
@@ -123,6 +128,9 @@ const SendMail = () => {
         />
       </section>
     </form>
+    
+    <div className="email___section_rainbow">gewgegew </div>
+    </section>
     </article>
   );
 };
