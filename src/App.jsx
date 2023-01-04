@@ -61,7 +61,7 @@ export const App = () => {
 
    
 
-      <section style={{ height: "90vh", width: "80vw", overflowY: "scroll" }}>
+      <section className="App_Routes____container">
         <Routes>
           <Route exact path="/" element={<Home color={color} />}></Route>
           <Route exact path="/projects" element={<Projects />}></Route>

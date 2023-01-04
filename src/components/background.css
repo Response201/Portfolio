@@ -2,8 +2,8 @@
   position: relative;
   height: 20vw;
   width: 20vw;
-  min-height: 230px;
-  min-width: 230px;
+  min-height: 200px;
+  min-width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,8 +12,8 @@
 .content {
   height: 18vw;
   width: 18vw;
-  min-height: 230px;
-  min-width: 230px;
+  min-height: 200px;
+  min-width: 200px;
   position: absolute;
  
   z-index: 0;

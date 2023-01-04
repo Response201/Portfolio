@@ -56,19 +56,23 @@
 
 body {
   height: 100vh;
-  min-height:fit-content;
+  min-height:100vh;
   min-height: -webkit-fill-available;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   padding: 0 auto;
   overflow: hidden;
   background-color: transparent;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items:center;
   background-color: var(--bg);
+  min-height: 500px;
+  overflow-y: scroll;
+
 }
 
 html {
-  height: -webkit-fill-available;
+  height: 100vh;
+  min-height:100vh;
+  min-height: -webkit-fill-available;
 }
