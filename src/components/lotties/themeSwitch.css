@@ -10,8 +10,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  height:clamp(1em, 2vw, 1.5em);
-  width:clamp(1em, 2vw, 1.5em);
+  height:clamp(1.1em, 3vw, 1.5em);
+  width:clamp(1.1em, 3vw, 1.5em);
 }
 
 .switchBtn {
