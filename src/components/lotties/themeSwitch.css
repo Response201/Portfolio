@@ -1,7 +1,7 @@
 .switch___content {
-  width: 20vw;
+  width:100%;
   max-width: 120px;
-  padding: 5px 5px 0 0;
+  padding: 5px 0px 0 0;
   display: flex;
   justify-content: space-around;
 }
@@ -11,7 +11,9 @@
   overflow: hidden;
   border-radius: 50%;
   height:clamp(1.1em, 3vw, 1.5em);
+  min-height: fit-content;
   width:clamp(1.1em, 3vw, 1.5em);
+  min-width: fit-content;
 }
 
 .switchBtn {
@@ -19,7 +21,7 @@ z-index: 0;
   height: 150%;
   width: 150%;
   border: none;
-  
+
 
 }
 
