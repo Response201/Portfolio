@@ -10,15 +10,15 @@
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  height:clamp(1.1em, 3vw, 1.5em);
-  width:clamp(1.1em, 3vw, 1.5em);
+  height:clamp(1.2em, 3vw, 1.5em);
+  width:clamp(1.2em, 3vw, 1.5em);
 
 }
 
 .switchBtn {
 z-index: 0;
-  height: 99%;
-  width: 99%;
+  height: 100%;
+  width: 100%;
   border: none;
 background-color: transparent;
 
