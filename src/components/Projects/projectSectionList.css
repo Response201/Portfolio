@@ -1,6 +1,6 @@
 .projectSection_grid_container {
   width: 100%;
-  height: 90vh;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
   overflow-y: scroll;

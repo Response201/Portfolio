@@ -17,12 +17,8 @@ export const App = () => {
 
   return (
     <article className="App">
-      <section className="link___section_bottom">
-        <Link to="/projects">
-          {" "}
-          <p> About Me</p>{" "}
-        </Link>
-        <Link to="/"> My skills </Link>
+    <section className="switch_container">
+        <ThemeSwitch setColor={setColor} color={color} />
       </section>
 
       <section className="link___section_rigth">
@@ -63,9 +59,7 @@ export const App = () => {
         </div>
       </section>
 
-      <section className="switch_container">
-        <ThemeSwitch setColor={setColor} color={color} />
-      </section>
+   
 
       <section style={{ height: "90vh", width: "80vw", overflowY: "scroll" }}>
         <Routes>
@@ -73,6 +67,13 @@ export const App = () => {
           <Route exact path="/projects" element={<Projects />}></Route>
           <Route exact path="/mail" element={<SendMail />}></Route>
         </Routes>
+      </section>
+      <section className="link___section_bottom">
+        <Link to="/projects">
+          {" "}
+          <p> About Me</p>{" "}
+        </Link>
+        <Link to="/"> My skills </Link>
       </section>
     </article>
   );
