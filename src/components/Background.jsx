@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./background.css";
 
-
 export const Background = ({ color }) => {
   const [backgroundColor, setbackgroundColor] = useState(color);
   const canvasRef = useRef(null);
@@ -11,14 +10,12 @@ export const Background = ({ color }) => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    console.log(color);
-
     // Skapa en array med partiklar
     const particles = [];
     for (let i = 0; i < 15; i++) {
       let mix = "";
 
-      if (color === "rgb(201, 19, 159)") {
+      if (color === "rgb(243, 19, 190)") {
         mix = `rgba(${Math.random() * 30 + 180}, 19 , 159, 1)`;
       } else if (color === "rgb(0,0,0)") {
         mix = `rgba(255,255,255,0.3)`;
@@ -26,7 +23,7 @@ export const Background = ({ color }) => {
         mix = ` rgba(41 , ${Math.random() * 20 + 120} , 134 , 1)`;
       }
 
-     /* rgb(103, 10, 81) */
+      /* rgb(103, 10, 81) */
 
       particles.push({
         x: Math.random() * canvas.width, // slumpmässig x-position
@@ -74,16 +71,11 @@ export const Background = ({ color }) => {
 
   return (
     <section className="container">
-      <section className="content" > 
-
-      <section className="blob___container">
-      
-        <canvas
-          ref={canvasRef}
-          className="blob"
-        ></canvas>
-        <div className="container___overlay"></div>
-      </section>
+      <section className="content">
+        <section className="blob___container">
+          <canvas ref={canvasRef} className="blob"></canvas>
+          <div className="container___overlay"></div>
+        </section>
       </section>
     </section>
   );

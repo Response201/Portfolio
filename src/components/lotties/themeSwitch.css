@@ -1,47 +1,23 @@
 .switch___content {
-  width:100%;
+  width: 100%;
   max-width: 120px;
   padding: 5px 0px 0 0;
   display: flex;
   justify-content: space-around;
+  z-index: 10;
 }
 
 .switchBtn___content {
   position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  height:clamp(1.2em, 3vw, 1.5em);
-  width:clamp(1.2em, 3vw, 1.5em);
 
+  border-radius: 50%;
+  height: clamp(1.2em, 3vw, 1.5em);
+  width: clamp(1.2em, 3vw, 1.5em);
 }
 
 .switchBtn {
-z-index: 0;
   height: 100%;
   width: 100%;
   border: none;
-background-color: transparent;
-
-}
-
-.activeSwitch {
   background-color: transparent;
-  border-radius: 50%;
-  height: 150%;
-  width: 150%;
-  top: 0;
-  position: absolute;
-  overflow: hidden;
-  
-}
-.notSwitch {
-  z-index: 1;
-  height: 150%;
-  width: 150%;
-  position: absolute;
-  top:-0em;
-  bottom: 0;
-  left: -0em;
-  right: 0;
-  background-color: rgba(105, 105, 105, 0.72);
 }

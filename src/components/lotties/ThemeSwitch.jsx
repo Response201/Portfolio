@@ -20,7 +20,7 @@ export const ThemeSwitch = ({ setColor, color }) => {
       document.documentElement.setAttribute("data-theme", "black");
     }
     if (mode === "pink") {
-      setColor("rgb(201, 19, 159)");
+      setColor("rgb(243, 19, 190)");
       document.documentElement.setAttribute("data-theme", "root");
     }
     if (mode === "turquoise") {
@@ -30,44 +30,41 @@ export const ThemeSwitch = ({ setColor, color }) => {
   }, [mode]);
 
   return (
-    <div className="switch___content" >
+    <div className="switch___content">
       <section
-       style={{ backgroundColor: "rgb(0, 0, 0)" }}
         className="switchBtn___content"
         onClick={(e) => onClickMode(e, "black")}
+        style={{
+          backgroundColor: `${
+            mode === "black" ? `${color}` : "rgb(100, 100, 100)"
+          }`
+        }}
       >
-        <div className={mode === "black" ? "activeSwitch" : "notSwitch"}> </div>
-        <button
-         
-          className="switchBtn"
-        />
+        <button className="switchBtn" />
       </section>
 
       <section
         className="switchBtn___content"
         onClick={(e) => onClickMode(e, "pink")}
-        style={{ backgroundColor: "rgb(255, 20, 200)" }}
+        style={{
+          backgroundColor: `${
+            mode === "pink" ? `${color}` : "rgb(105, 000, 105)"
+          }`
+        }}
       >
-        <div className={mode === "pink" ? "activeSwitch" : "notSwitch"}> </div>
-
-        <button
-          
-          className="switchBtn"
-        />
+        <button className="switchBtn" />
       </section>
 
       <section
         className="switchBtn___content"
         onClick={(e) => onClickMode(e, "turquoise")}
-        style={{ backgroundColor: "rgb(71, 220, 223)" }}
+        style={{
+          backgroundColor: `${
+            mode === "turquoise" ? `${color}` : "rgb(000, 100, 100)"
+          }`
+        }}
       >
-        <div className={mode === "turquoise" ? "activeSwitch" : "notSwitch"}>
-          {" "}
-        </div>
-        <button
-          
-          className="switchBtn"
-        />
+        <button className="switchBtn" />
       </section>
     </div>
   );
