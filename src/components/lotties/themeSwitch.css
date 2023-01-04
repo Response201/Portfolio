@@ -16,8 +16,8 @@
 
 .switchBtn {
 z-index: 0;
-  height: 99%;
-  width: 99%;
+  height: 150%;
+  width: 150%;
   border: none;
   
 
@@ -26,8 +26,8 @@ z-index: 0;
 .activeSwitch {
   background-color: transparent;
   border-radius: 50%;
-  height: 102%;
-  width: 102%;
+  height: 150%;
+  width: 150%;
   top: 0;
   position: absolute;
   overflow: hidden;
@@ -35,8 +35,8 @@ z-index: 0;
 }
 .notSwitch {
   z-index: 1;
-  height: 102%;
-  width: 102%;
+  height: 150%;
+  width: 150%;
   position: absolute;
   top:-0em;
   bottom: 0;
