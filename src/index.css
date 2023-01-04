@@ -56,7 +56,7 @@
 
 body {
   height: 100vh;
-  min-height: 500px;
+  min-height:100vh;
   min-height: -webkit-fill-available;
   width: 100%;
   margin: 0 auto;
@@ -64,8 +64,8 @@ body {
   overflow: hidden;
   background-color: transparent;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: var(--bg);
 }
 
