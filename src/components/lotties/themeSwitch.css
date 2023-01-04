@@ -11,17 +11,16 @@
   overflow: hidden;
   border-radius: 50%;
   height:clamp(1.1em, 3vw, 1.5em);
-  min-height: fit-content;
   width:clamp(1.1em, 3vw, 1.5em);
-  min-width: fit-content;
+
 }
 
 .switchBtn {
 z-index: 0;
-  height: 150%;
-  width: 150%;
+  height: 99%;
+  width: 99%;
   border: none;
-
+background-color: transparent;
 
 }
 

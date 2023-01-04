@@ -30,14 +30,15 @@ export const ThemeSwitch = ({ setColor, color }) => {
   }, [mode]);
 
   return (
-    <div className="switch___content">
+    <div className="switch___content" >
       <section
+       style={{ backgroundColor: "rgb(0, 0, 0)" }}
         className="switchBtn___content"
         onClick={(e) => onClickMode(e, "black")}
       >
         <div className={mode === "black" ? "activeSwitch" : "notSwitch"}> </div>
         <button
-          style={{ backgroundColor: "rgb(0, 0, 0)" }}
+         
           className="switchBtn"
         />
       </section>
@@ -45,11 +46,12 @@ export const ThemeSwitch = ({ setColor, color }) => {
       <section
         className="switchBtn___content"
         onClick={(e) => onClickMode(e, "pink")}
+        style={{ backgroundColor: "rgb(255, 20, 200)" }}
       >
         <div className={mode === "pink" ? "activeSwitch" : "notSwitch"}> </div>
 
         <button
-          style={{ backgroundColor: "rgb(255, 20, 200)" }}
+          
           className="switchBtn"
         />
       </section>
@@ -57,12 +59,13 @@ export const ThemeSwitch = ({ setColor, color }) => {
       <section
         className="switchBtn___content"
         onClick={(e) => onClickMode(e, "turquoise")}
+        style={{ backgroundColor: "rgb(71, 220, 223)" }}
       >
         <div className={mode === "turquoise" ? "activeSwitch" : "notSwitch"}>
           {" "}
         </div>
         <button
-          style={{ backgroundColor: "rgb(71, 220, 223)" }}
+          
           className="switchBtn"
         />
       </section>
