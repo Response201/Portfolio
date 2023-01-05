@@ -1,23 +1,15 @@
 import React, { useState } from "react";
-import ButtonLottie from "../lotties/ButtonLottie";
+import ButtonLottie from "./ButtonLottie";
 import { GetProjectForImage } from "./GetProjectForImage";
 import "./projectSectionList.css";
 import Tilty from "react-parallax-tilt";
-
-
-
-
-
 
 export const ProjectSectionList = ({ item }) => {
   const [clickLottie, setClickLottie] = useState(false);
   const [scale, setScale] = useState(1.03);
   const onClickBtn = () => {
     setClickLottie(true);
- 
   };
-
- 
 
   return (
     <Tilty
@@ -32,9 +24,6 @@ export const ProjectSectionList = ({ item }) => {
       glareColor="white"
       glarePosition="all"
       glareBorderRadius="13px"
-
-
-
     >
       <section className="imageAndUl___container">
         <GetProjectForImage item={item.imgName} />
@@ -55,8 +44,6 @@ export const ProjectSectionList = ({ item }) => {
           </div>
         </section>
       </section>
-
-    
     </Tilty>
   );
 };

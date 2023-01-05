@@ -12,8 +12,22 @@
   color: var(--text);
   background-color: var(--bg);
   z-index: -10;
-min-height: 490px;
-  
+  min-height: 490px;
+}
+
+/* cursors */
+.pinkCursor {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur140.cur), auto !important;
+}
+.turquoiseCursor {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur138.cur), auto !important;
+}
+.blackCursor {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur107.cur), auto !important;
+}
+
+a {
+  cursor: unset;
 }
 
 .App_Routes____container {
@@ -30,7 +44,6 @@ min-height: 490px;
 .link___section_left a,
 .link___section_rigth a {
   all: unset;
-  cursor: default;
   font-size: clamp(1rem, 3vw, 1.4rem);
   font-weight: 800;
   letter-spacing: 3px;
@@ -159,14 +172,4 @@ min-height: 490px;
   justify-content: flex-end;
 }
 
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  .App {
-    height: 85%;
-  
-  
-  }
-}
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
- */

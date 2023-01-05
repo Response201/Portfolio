@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./themeSwitch.css";
-import store from "../../store";
+import store from "../store";
 import { useSnapshot, proxy } from "valtio";
 
 export const ThemeSwitch = ({ setColor, color }) => {
@@ -12,18 +12,20 @@ export const ThemeSwitch = ({ setColor, color }) => {
     setMode(text);
   };
 
+
+
   useEffect(() => {
     store.colors = mode;
 
-    if (mode === "black") {
+    if (mode === "rgb(0,0,0)") {
       setColor("rgb(0,0,0)");
-      document.documentElement.setAttribute("data-theme", "black");
+      document.documentElement.setAttribute("data-theme", "rgb(0,0,0)");
     }
-    if (mode === "pink") {
+    if (mode === "rgb(243, 19, 190)") {
       setColor("rgb(243, 19, 190)");
       document.documentElement.setAttribute("data-theme", "root");
     }
-    if (mode === "turquoise") {
+    if (mode === "rgb(51, 255, 255)") {
       setColor("rgb(51, 255, 255)");
       document.documentElement.setAttribute("data-theme", "turquoise");
     }
@@ -33,10 +35,10 @@ export const ThemeSwitch = ({ setColor, color }) => {
     <div className="switch___content">
       <section
         className="switchBtn___content"
-        onClick={(e) => onClickMode(e, "black")}
+        onClick={(e) => onClickMode(e, "rgb(0,0,0)")}
         style={{
           backgroundColor: `${
-            mode === "black" ? `${color}` : "rgb(100, 100, 100)"
+            mode === "rgb(0,0,0)" ? `${color}` : "rgb(100, 100, 100)"
           }`
         }}
       >
@@ -45,10 +47,10 @@ export const ThemeSwitch = ({ setColor, color }) => {
 
       <section
         className="switchBtn___content"
-        onClick={(e) => onClickMode(e, "pink")}
+        onClick={(e) => onClickMode(e, "rgb(243, 19, 190)")}
         style={{
           backgroundColor: `${
-            mode === "pink" ? `${color}` : "rgb(105, 000, 105)"
+            mode === "rgb(243, 19, 190)" ? `${color}` : "rgb(105, 000, 105)"
           }`
         }}
       >
@@ -57,10 +59,10 @@ export const ThemeSwitch = ({ setColor, color }) => {
 
       <section
         className="switchBtn___content"
-        onClick={(e) => onClickMode(e, "turquoise")}
+        onClick={(e) => onClickMode(e, "rgb(51, 255, 255)")}
         style={{
           backgroundColor: `${
-            mode === "turquoise" ? `${color}` : "rgb(000, 100, 100)"
+            mode === "rgb(51, 255, 255)" ? `${color}` : "rgb(000, 100, 100)"
           }`
         }}
       >

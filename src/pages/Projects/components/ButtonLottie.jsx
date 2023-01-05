@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import turquoise from "../../assets/lotties/button.json";
-import black from "../../assets/lotties/buttonBlack.json";
-import pink from "../../assets/lotties/buttonPink.json";
+import turquoise from "../../../assets/lotties/button.json";
+import black from "../../../assets/lotties/buttonBlack.json";
+import pink from "../../../assets/lotties/buttonPink.json";
 import Lottie from "lottie-react";
-import store from "../../store";
+import store from "../../../store";
 import { useSnapshot } from "valtio";
 const ButtonLottie = ({ clickLottie, setClickLottie }) => {
   const snap = useSnapshot(store);
@@ -13,13 +13,13 @@ const ButtonLottie = ({ clickLottie, setClickLottie }) => {
 
   /* ändrar knappens färg efter mode */
   useEffect(() => {
-    if (snap.colors === "black") {
+    if (snap.colors === "rgb(0,0,0)") {
       setAnimation(black);
     }
-    if (snap.colors === "turquoise") {
+    if (snap.colors === "rgb(51, 255, 255)") {
       setAnimation(turquoise);
     }
-    if (snap.colors === "pink") {
+    if (snap.colors === "rgb(243, 19, 190)") {
       setAnimation(pink);
     }
   }, [snap.colors]);

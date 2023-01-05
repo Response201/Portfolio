@@ -1,9 +1,9 @@
 .email___form_container {
-  height:100%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -20,7 +20,6 @@
 
 .email___section_rainbow {
   position: absolute;
-
   background: linear-gradient(
     90deg,
     var(--primary-two) 0%,
@@ -54,12 +53,13 @@
 }
 
 label {
-  
+  cursor: unset;
   font-size: 1rem;
   font-weight: 800;
 }
 
 input[type="text"] {
+  cursor: unset;
   letter-spacing: 0.15em;
   font-size: 0.9rem;
   font-weight: 500;
@@ -74,6 +74,7 @@ input[type="text"] {
   background-color: transparent;
 }
 textarea {
+  cursor: unset;
   letter-spacing: 0.15em;
   font-size: 1.1rem;
   height: 100%;
@@ -101,13 +102,13 @@ textarea:valid,
 
 .valid:focus,
 .subject___input:valid:focus {
-  background: url("../assets/image/ok.svg") no-repeat 98% 50%;
-  background-size: 25px;
+  background: url("../../assets/image/ok.png") no-repeat 99% 50%;
+  background-size: 15px;
 }
 
 textarea:valid:focus {
-  background: url("../assets/image/ok.svg") no-repeat 98% 2%;
-  background-size: 25px;
+  background: url("../../assets/image/ok.png") no-repeat 99% 2%;
+  background-size: 15px;
 }
 
 .validText {
@@ -125,13 +126,13 @@ textarea:invalid,
 
 .notValid:focus,
 .subject___input:invalid:focus {
-  background: url("../assets/image/no.svg") no-repeat 99% 50%;
-  background-size: 25px;
+  background: url("../../assets/image/no.png") no-repeat 99% 50%;
+  background-size: 15px;
 }
 
 textarea:invalid:focus {
-  background: url("../assets/image/no.svg") no-repeat 99% 2%;
-  background-size: 25px;
+  background: url("../../assets/image/no.png") no-repeat 99% 2%;
+  background-size: 15px;
 }
 
 .notValidText {
@@ -180,6 +181,7 @@ textarea:invalid:focus {
   transition: ease-in 0.2s;
   min-height: 50px;
   min-width: 200px;
+  overflow: hidden;
 }
 
 .submit___input_hidden {
@@ -192,7 +194,8 @@ textarea:invalid:focus {
   transition: ease-in 0.2s;
   min-height: 50px;
   min-width: 200px;
-  opacity: 35%;
+  opacity: 25%;
+  overflow: hidden;
 }
 
 .submit___input:hover,
@@ -202,6 +205,7 @@ textarea:invalid:focus {
 
 .submit___input button,
 .submit___input_hidden button {
+  cursor: unset;
   background-color: transparent;
   border: none;
   top: -7%;
@@ -209,6 +213,8 @@ textarea:invalid:focus {
   position: absolute;
   z-index: 10;
 }
+
+
 
 @media (min-width: 900px) {
   .email___form_container {

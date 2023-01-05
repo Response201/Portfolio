@@ -1,6 +1,7 @@
 :root {
   --bg: #e4e4e4;
   --bg-form: #e7e6e6f3;
+  --bg-card:#e7e6e6e0;
   --form-input-valid: rgb(192, 17, 151);
   --form-input-not-valid: rgb(116, 9, 91);
   --shadow: #5801567f;
@@ -16,6 +17,7 @@
 [data-theme="turquoise"] {
   --bg: #1f1f1f;
   --bg-form: #313131f0;
+  --bg-card:#313131e4;
   --form-input-valid: rgb(38, 123, 125);
   --form-input-not-valid: rgb(81, 213, 227);
   --shadow: #003c3b93;
@@ -30,9 +32,10 @@
   /* rgb(60, 186, 188); */
 }
 
-[data-theme="black"] {
+[data-theme="rgb(0,0,0)"] {
   --bg: #eeeeee;
   --bg-form: #eeeeeef1;
+  --bg-card:#eeeeeeea;
   --form-input-valid: #717171;
   --form-input-not-valid: #121212;
   --shadow: #12121280;
@@ -48,6 +51,7 @@
 * {
   -ms-overflow-style: none;
   scrollbar-width: none;
+
 }
 
 *::-webkit-scrollbar {
@@ -68,6 +72,7 @@ body {
   background-color: var(--bg);
   min-height: 500px;
   overflow-y: scroll;
+ 
 
 }
 

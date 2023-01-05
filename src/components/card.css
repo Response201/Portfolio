@@ -1,0 +1,102 @@
+.card___section {
+  width: 98%;
+  height: 99%;
+  border-radius: 13px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.text {
+  padding: 0.5%;
+}
+
+.img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.card_rainbow {
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    var(--primary-two) 0%,
+    var(--primary-three) 5%,
+    var(--primary-one) 50%,
+    var(--complementary) 100%
+  );
+  height: 500vw;
+  width: 500vw;
+  top: -160%;
+  left: -150%;
+  opacity: 60%;
+  animation: o-rotate-360 linear 20s infinite;
+}
+
+/* mix up colors for img frame */
+
+.rainbow_colorMix {
+  background: linear-gradient(
+    90deg,
+    var(--primary-two) 0%,
+    var(--complementary) 5%,
+    var(--primary-one) 50%,
+    var(--primary-three) 100%
+  );
+}
+
+.card___text_container {
+  background-color: var(--bg-card);
+  padding: 2%;
+  border-radius: 13px;
+}
+
+.card___p_One {
+  margin: 0;
+}
+.card___p_Two,
+.card___p_Three {
+  margin: 3% 0 0 0;
+}
+
+.card___section img {
+  position: absolute;
+  border-radius: 50%;
+  width: 98%;
+  height: 98%;
+  padding: 1%;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .card_rainbow {
+    height: 500vw;
+    width: 500vw;
+    top: -300%;
+    left: -300%;
+    animation: o-rotate-360 linear 20s infinite;
+  }
+}
+
+@keyframes o-rotate-360 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

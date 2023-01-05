@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import coffee from "../../assets/image/coffee.png";
-import weather from "../../assets/image/weather.jpg";
-import todo from "../../assets/image/todo.png";
-import foodnary from "../../assets/image/foodnary.png";
+import coffee from "../../../assets/image/coffee.png";
+import weather from "../../../assets/image/weather.jpg";
+import todo from "../../../assets/image/todo.png";
+import foodnary from "../../../assets/image/foodnary.png";
 
 export const GetProjectForImage = ({ item }) => {
   const [image, setImage] = useState('')

@@ -8,6 +8,7 @@ align-items: flex-start;
   z-index: 10;
   padding-top: 2px;
   
+  
 }
 
 .switchBtn___content {
@@ -20,6 +21,7 @@ align-items: flex-start;
 }
 
 .switchBtn {
+  all: unset;
   height: 100%;
   width:100%;
   border: none;

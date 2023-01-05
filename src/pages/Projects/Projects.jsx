@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { ProjectSectionList } from "../components/Projects/ProjectSectionList";
-
+import { ProjectSectionList } from "./components/ProjectSectionList";
+import './projects.css'
 const Projects = () => {
   const array = [
     {
