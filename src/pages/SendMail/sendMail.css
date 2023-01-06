@@ -5,12 +5,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 450px;
 }
 
 .email___section {
   margin-top: 10%;
   position: relative;
   height: 80%;
+  min-height: 400px;
   max-height: 700px;
   width: 95%;
   max-width: 550px;
