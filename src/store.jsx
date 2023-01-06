@@ -4,9 +4,7 @@ import { proxy } from "valtio";
 const store = proxy({ 
   
   
-  colors: "pink"
-
-  
+  colors: "rgb(243, 19, 190)"
 
 
 });

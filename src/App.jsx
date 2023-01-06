@@ -11,7 +11,7 @@ import SendMail from "./pages/SendMail/SendMail";
 import { About } from "./pages/About/About";
 
 export const App = () => {
-  const [color, setColor] = useState("");
+
   const snap = useSnapshot(store);
   const [cursors, setCursors] = useState("pinkCursor");
 
@@ -32,7 +32,7 @@ export const App = () => {
   return (
     <article className={`App ${cursors}`}>
       <section className="switch_container">
-        <ThemeSwitch setColor={setColor} color={color} className={`${cursors}`} />
+        <ThemeSwitch  className={`${cursors}`} />
       </section>
 
       <section className="link___section_rigth">
@@ -75,7 +75,7 @@ export const App = () => {
 
       <section className="App_Routes____container">
         <Routes>
-          <Route exact path="/" element={<Home color={color} />}></Route>
+          <Route exact path="/" element={<Home  />}></Route>
           <Route exact path="/projects" element={<Projects />}></Route>
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/mail" element={<SendMail />}></Route>

@@ -1,12 +1,13 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./background.css";
-
-export const Background = ({ color }) => {
-  const [backgroundColor, setbackgroundColor] = useState(color);
+import { useSnapshot } from "valtio";
+import store from "../../../store";
+export const Background = () => {
+  const [backgroundColor, setbackgroundColor] = useState("");
   const canvasRef = useRef(null);
-
+  const snap = useSnapshot(store);
   useEffect(() => {
-    setbackgroundColor(color);
+    setbackgroundColor(snap.colors);
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
@@ -15,11 +16,11 @@ export const Background = ({ color }) => {
     for (let i = 0; i < 15; i++) {
       let mix = "";
 
-      if (color === "rgb(243, 19, 190)") {
+      if (snap.colors === "rgb(243, 19, 190)") {
         mix = `rgba(${Math.random() * 30 + 180}, 19 , 159, 1)`;
-      } else if (color === "rgb(0,0,0)") {
+      } else if (snap.colors === "rgb(0,0,0)") {
         mix = `rgba(255,255,255,0.3)`;
-      } else if (color === "rgb(51, 255, 255)") {
+      } else if (snap.colors === "rgb(51, 255, 255)") {
         mix = ` rgba(41 , ${Math.random() * 20 + 120} , 134 , 1)`;
       }
 
@@ -67,7 +68,7 @@ export const Background = ({ color }) => {
       }
     };
     animate();
-  }, [color]); //
+  }, [snap.colors]); //
 
   return (
     <section className="container">

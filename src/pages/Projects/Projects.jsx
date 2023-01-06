@@ -9,7 +9,7 @@ const Projects = () => {
       imgName: "weather"
     },
     {
-      name: "grab a coffee",
+      name: "coffee app",
       url: "https://grabacoffee.netlify.app/",
       imgName: "coffee"
     },
@@ -19,7 +19,7 @@ const Projects = () => {
       imgName: "todo"
     },
     {
-      name: "foodnary",
+      name: "recipe app",
       url: "https://foodnary.netlify.app",
       imgName: "foodnary"
     }

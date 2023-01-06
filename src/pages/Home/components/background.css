@@ -1,21 +1,15 @@
 .container {
   position: relative;
-  height: 20vw;
-  width: 20vw;
-  min-height: 200px;
-  min-width: 200px;
+  height: clamp(200px, 100%, 100vh);
+  width: clamp(100vw, 100%, 100vh);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .content {
-  height: 18vw;
-  width: 18vw;
-  min-height: 200px;
-  min-width: 200px;
-  position: absolute;
- 
+  height: clamp(150px, 35vh, 300px);
+  aspect-ratio: 4/4;
   z-index: 0;
   animation: blobValue 70s ease infinite;
   overflow: hidden;
@@ -38,7 +32,8 @@
 
 .blob___container {
   position: relative;
-  padding: 23vh 23vh;
+  height: 100%;
+  width: 100%;
   box-shadow: 1px 1px 15px rgb(102, 101, 101);
 }
 

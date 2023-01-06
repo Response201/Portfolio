@@ -1,4 +1,3 @@
-
 .ProjectSection____container {
   height: 90%;
   max-height: 320px;
@@ -13,7 +12,6 @@
   border-radius: 15px;
   overflow: hidden;
   animation: fadeIn ease 5s;
-  
 }
 
 @keyframes fadeIn {
@@ -77,8 +75,6 @@
   width: 98%;
 }
 
-
-
 .textLottieBtn____p {
   width: 100%;
 
@@ -104,4 +100,3 @@
   width: 100%;
   text-align: center;
 }
-

@@ -118,10 +118,10 @@ textarea:valid:focus {
 .subject___input:invalid,
 textarea:invalid,
 .notValid {
-  color: var(--form-input-not-valid);
-  box-shadow: -5px 0 var(--form-input-not-valid);
+  color: var(--text-secondary);
+  box-shadow: -5px 0 var(--text-secondary);
   border-left: none;
-  border: 1px solid var(--form-input-not-valid);
+  border: 1px solid var(--text-secondary);
 }
 
 .notValid:focus,
@@ -136,7 +136,7 @@ textarea:invalid:focus {
 }
 
 .notValidText {
-  color: var(--form-input-not-valid);
+  color: var(--text-secondary);
 }
 
 /* adress */
@@ -213,8 +213,6 @@ textarea:invalid:focus {
   position: absolute;
   z-index: 10;
 }
-
-
 
 @media (min-width: 900px) {
   .email___form_container {

@@ -1,16 +1,20 @@
 .card___section {
-  width: 98%;
-  height: 99%;
+  width: 100%;
+  height: 100%;
   border-radius: 13px;
   display: flex;
-  align-content: center;
-  justify-content: center;
-  overflow: hidden;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
   position: relative;
+overflow: hidden;
+ 
 }
 
 .text {
+  width: 100%;
   padding: 0.5%;
+
 }
 
 .img {
@@ -28,13 +32,13 @@
     var(--primary-three) 5%,
     var(--primary-one) 50%,
     var(--complementary) 100%
-  );
+  ); 
   height: 500vw;
   width: 500vw;
   top: -160%;
   left: -150%;
   opacity: 60%;
-  animation: o-rotate-360 linear 20s infinite;
+  animation: o-rotate-360 linear 10s infinite;
 }
 
 /* mix up colors for img frame */
@@ -45,13 +49,13 @@
     var(--primary-two) 0%,
     var(--complementary) 5%,
     var(--primary-one) 50%,
-    var(--primary-three) 100%
+    var(--complementary) 100%
   );
 }
 
 .card___text_container {
-  background-color: var(--bg-card);
-  padding: 2%;
+  background-color: var(--bg-form);
+  padding: 3%;
   border-radius: 13px;
 }
 
@@ -85,9 +89,9 @@
   .card_rainbow {
     height: 500vw;
     width: 500vw;
-    top: -300%;
-    left: -300%;
-    animation: o-rotate-360 linear 20s infinite;
+    top: -50vw;
+    left: -250vw;
+    animation: o-rotate-360 linear 10s infinite;
   }
 }
 
