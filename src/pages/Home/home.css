@@ -6,6 +6,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  min-height: 440px;
 }
 
 .home___content {
@@ -16,6 +17,7 @@
   width: 100%;
   height: 100%;
   max-width: 1500px;
+  overflow: hidden;
 }
 
 /* headings */
