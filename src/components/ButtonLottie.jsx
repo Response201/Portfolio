@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import turquoise from "../../../assets/lotties/button.json";
-import black from "../../../assets/lotties/buttonBlack.json";
-import pink from "../../../assets/lotties/buttonPink.json";
+import turquoise from "../assets/lotties/button.json";
+import black from "../assets/lotties/buttonBlack.json";
+import pink from "../assets/lotties/buttonPink.json";
 import Lottie from "lottie-react";
-import store from "../../../store";
+import store from "../store";
 import { useSnapshot } from "valtio";
 const ButtonLottie = ({ clickLottie, setClickLottie }) => {
   const snap = useSnapshot(store);
@@ -44,6 +44,8 @@ const ButtonLottie = ({ clickLottie, setClickLottie }) => {
   }, [clickLottie]);
 
   return (
+
+    
     <Lottie
       animationData={animation}
       progress={0}

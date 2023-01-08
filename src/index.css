@@ -12,6 +12,7 @@
   --text: #1c7e1c;
   --text-secondary:rgb(116, 9, 91);
   --text-header: rgb(243, 19, 190);
+  --text-btn-header:rgb(116, 9, 91);
 }
 
 [data-theme="turquoise"] {
@@ -26,8 +27,9 @@
   --primary-two: rgb(145, 218, 210);
   --primary-three: rgb(216, 223, 222);
   --text: rgb(204, 98, 62);
-  --text-secondary:rgb(81, 213, 227);
-  --text-header: rgb(60, 186, 188);
+  --text-secondary:rgb(43, 219, 219);
+  --text-header: rgb(43, 219, 219);
+  --text-btn-header:rgb(103, 26, 12);
  
 
   /* rgb(60, 186, 188); */
@@ -47,6 +49,7 @@
   --text: rgb(48, 48, 48);
   --text-secondary:#121212;
   --text-header: rgb(156, 156, 156);
+  --text-btn-header:#525151;
 }
 
 * {

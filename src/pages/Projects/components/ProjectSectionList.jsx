@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ButtonLottie from "./ButtonLottie";
+import ButtonLottie from "../../../components/ButtonLottie";
 import { GetProjectForImage } from "./GetProjectForImage";
 import "./projectSectionList.css";
 import Tilty from "react-parallax-tilt";

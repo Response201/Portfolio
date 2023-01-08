@@ -3,7 +3,7 @@ import Tilty from "react-parallax-tilt";
 import "./card.css";
 import store from "../store";
 import { useSnapshot } from "valtio";
-export const Card = ({ textOne, textThree, textTwo, img, alt }) => {
+export const Card = ({ title,text, img, alt }) => {
   const snap = useSnapshot(store);
 
   return (
@@ -22,18 +22,23 @@ export const Card = ({ textOne, textThree, textTwo, img, alt }) => {
         backgroundColor: `${snap.colors}`
       }}
     >
-      <section>
-        {textOne && textTwo && textThree && (
+      <section style={{width:'100%', height:'100%'}}>
+
+
+
+
+   
           <>
-            {" "}
-            <div className="card_rainbow"> </div>{" "}
+       
+            <div className="card_rainbow"> </div>
             <section className="card___text_container">
-              <p className="card___p_One"> {textOne} </p>{" "}
-              <p className="card___p_Two"> {textTwo} </p>
-              <p className="card___p_Three"> {textThree} </p>{" "}
-            </section>{" "}
+            {title && <h1 className="card___h1_Title"> {title} </h1>}
+            <section className={title ? "card___p_container" : ''}>
+             {text && text.map( item =>  <p className="card___p"> {item} </p> ) }
+             </section>
+            </section>
           </>
-        )}
+      
         {img && (
           <>
             {" "}

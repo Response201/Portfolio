@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ButtonLottie from "../Projects/components/ButtonLottie";
+import ButtonLottie from "../../components/ButtonLottie"
 import { MailNotSent } from "./components/MailNotSent";
 import { LoadingDots } from "./components/LoadingDots";
 import "./sendMail.css";

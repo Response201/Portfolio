@@ -21,7 +21,7 @@ export const Background = () => {
       } else if (snap.colors === "rgb(0,0,0)") {
         mix = `rgba(255,255,255,0.3)`;
       } else if (snap.colors === "rgb(51, 255, 255)") {
-        mix = ` rgba(41 , ${Math.random() * 20 + 120} , 134 , 1)`;
+        mix = ` rgba(41 , ${Math.random() * 20 + 200} , 214 , 1)`;
       }
 
       /* rgb(103, 10, 81) */

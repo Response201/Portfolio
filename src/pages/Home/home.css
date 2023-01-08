@@ -46,12 +46,27 @@
   line-height: clamp(3rem, 15vw, 5rem);
   color: var(--text-header);
 }
-.header___content p {
+.header___content {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   margin: 0;
   padding: 0 auto;
   text-align: center;
 }
+
+/* button */
+.textLottieBtn {
+  position: relative;
+  height: 30px;
+  width: 100vw;
+
+
+}
+.text {
+  position: absolute;
+  top: 0;
+  font-size: 25px;
+}
+
 
 /* image + blob-background */
 
@@ -100,6 +115,8 @@
   .header___content p {
     text-align: left;
   }
+
+  
 
   /* image + blob-background */
 

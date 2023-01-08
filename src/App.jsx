@@ -9,6 +9,7 @@ import Projects from "./pages/Projects/Projects";
 import store from "./store";
 import SendMail from "./pages/SendMail/SendMail";
 import { About } from "./pages/About/About";
+import { Skills } from "./pages/Skills/Skills";
 
 export const App = () => {
 
@@ -78,6 +79,7 @@ export const App = () => {
           <Route exact path="/" element={<Home  />}></Route>
           <Route exact path="/projects" element={<Projects />}></Route>
           <Route exact path="/about" element={<About />}></Route>
+          <Route exact path="/skills" element={<Skills />}></Route>
           <Route exact path="/mail" element={<SendMail />}></Route>
         </Routes>
       </section>
@@ -86,7 +88,7 @@ export const App = () => {
           {" "}
           <p> About Me</p>{" "}
         </Link>
-        <Link to="/"> My skills </Link>
+        <Link to="/skills"> My skills </Link>
       </section>
     </article>
   );
