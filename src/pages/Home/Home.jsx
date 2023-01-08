@@ -12,7 +12,7 @@ const Home = () => {
         <section className="home___header_container">
           <section className="header___content">
             <h1>Frontend devoloper</h1>
-            <p>
+            <p className="header___content_p">
               With a strong focus on user experience and modern technologies
             </p>
             <section

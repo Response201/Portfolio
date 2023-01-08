@@ -47,10 +47,10 @@
   line-height: clamp(3rem, 15vw, 5rem);
   color: var(--text-header);
 }
-.header___content p{
+.header___content_p{
   font-size: clamp(1.2rem, 3vw, 1.5rem);
-  padding: 0 auto;
-  margin: 1% auto;
+  padding: 0% auto;
+  margin: 1% ;
   text-align: center;
  
 }
