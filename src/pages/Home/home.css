@@ -6,18 +6,19 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  min-height: 440px;
+  min-height: 450px;
 }
 
 .home___content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
   max-width: 1500px;
   overflow: hidden;
+  
 }
 
 /* headings */
@@ -26,18 +27,18 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 35%;
+  height: 60%;
   width: 100%;
 }
 
 .header___content {
-  width: 85%;
-  padding: 0 5px;
+  width: 100%;
+  padding: 0px;
 }
 
 .header___content h1 {
   text-align: center;
-  font-size: clamp(1rem, 15vw, 4.5rem);
+  font-size: clamp(1rem, 13vw, 4.5rem);
   margin: 0 0 1rem 0;
   padding: 0 auto;
   font-family: "Pattaya", sans-serif;
@@ -46,17 +47,19 @@
   line-height: clamp(3rem, 15vw, 5rem);
   color: var(--text-header);
 }
-.header___content {
+.header___content p{
   font-size: clamp(1.2rem, 3vw, 1.5rem);
-  margin: 0;
   padding: 0 auto;
+  margin: 1% auto;
   text-align: center;
+ 
 }
 
 /* button */
 .textLottieBtn {
   position: relative;
-  height: 30px;
+  height: 10%;
+  min-height: 30px;
   width: 100vw;
 
 
@@ -73,9 +76,11 @@
 .home___background_blob_container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  height: 60%;
+  align-items: center;
+height: 100%;
   width: 40%;
+  
+  
 }
 
 @media (min-width: 768px) {

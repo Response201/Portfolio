@@ -17,8 +17,8 @@
 }
 
 .img {
-  width: calc(18vh + 5vw);
-  height: calc(18vh + 5vw);
+  width: calc(17vh + 5vw);
+  height: calc(17vh + 5vw);
   min-height: 120px;
   min-width: 120px;
   border-radius: 50%;
