@@ -17,27 +17,27 @@ export const Card = ({ title,text, img, alt }) => {
       tiltMaxAngleX={5}
       tiltMaxAngleY={10}
       perspective={1500}
-      className={!img ? "card___section text" : "img_container card___section"}
-    
+      className={!img ? "card___section text" : "img card___section"}
+      style={{heigth:'100%', width:'100%'}}
     >
-      <section>
+     
 
 
 
 
    
-          <>
+        
        
             <div className="card_rainbow"> </div>
-            <section className="card___text_container">
+            <section className="card___text_container" >
             {title && <h1 className="card___h1_Title"> {title} </h1>}
             <section className={title ? "card___p_container" : ''}>
              {text && text.map( item =>  <p className="card___p"> {item} </p> ) }
              </section>
             </section>
-          </>
       
-      <> 
+      
+   
       
         {img && (
           
@@ -47,8 +47,8 @@ export const Card = ({ title,text, img, alt }) => {
             <img src={img} alt={alt} />{" "}
           </>
         )}
-        </>
-      </section>
+       
+    
     </Tilty>
   );
 };
