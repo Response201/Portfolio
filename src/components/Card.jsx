@@ -17,12 +17,10 @@ export const Card = ({ title,text, img, alt }) => {
       tiltMaxAngleX={5}
       tiltMaxAngleY={10}
       perspective={1500}
-      className={!img ? "card___section text" : "img card___section"}
-      style={{
-        backgroundColor: `${snap.colors}`
-      }}
+      className={!img ? "card___section text" : "img_container card___section"}
+    
     >
-      <section style={{width:'100%', height:'100%'}}>
+      <section>
 
 
 
@@ -39,13 +37,17 @@ export const Card = ({ title,text, img, alt }) => {
             </section>
           </>
       
+      <> 
+      
         {img && (
-          <>
+          
+          < >
             {" "}
             <div className="card_rainbow rainbow_colorMix"> </div>{" "}
             <img src={img} alt={alt} />{" "}
           </>
         )}
+        </>
       </section>
     </Tilty>
   );

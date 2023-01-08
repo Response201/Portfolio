@@ -55,6 +55,7 @@ height: 5%;
 }
 
 .about___section_img {
+z-index: 100;
   display: flex;
   justify-content: center;
 }
