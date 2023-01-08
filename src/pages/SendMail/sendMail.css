@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+ 
 }
 
 .email___section {
@@ -52,12 +52,14 @@
   border-radius: 5px;
   border: 0.5px solid var(--shadow-border);
   z-index: 10;
+  
 }
 
 label {
   cursor: unset;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 800;
+  padding: 0.3% 0 0 0;
 }
 
 input[type="text"] {
@@ -73,6 +75,7 @@ input[type="text"] {
   text-overflow: ellipsis;
   margin-top: 5px;
   padding: 0 1%;
+  margin: 0;
   background-color: transparent;
 }
 textarea {
@@ -82,7 +85,7 @@ textarea {
   height: 100%;
   width: 95%;
   resize: none;
-  margin: 5px 0;
+  margin: 0;
   padding: 1%;
   background-color: transparent;
 }
