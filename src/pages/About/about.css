@@ -30,12 +30,13 @@ height: 5%;
 
 
 .about___content{
-  height: 89%;
+  height: 90%;
   width: 98%;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   place-items: center;
+
   max-width: 1800px;
   padding: 0 1%;
 }
@@ -47,7 +48,8 @@ height: 5%;
   color: var(--text-secondary);
   height: fit-content;
   width: 90%;
-  padding: 0%;
+  padding:  0%;
+  margin-bottom: 1%;
 }
 .about___section_text p {
   font-size: clamp(9px, calc(1vw + 1vh), 19px);
@@ -68,5 +70,6 @@ z-index: 100;
   .about___section_text {
     width: 98%;
     max-width: 550px;
+    margin-bottom: 0%;
   }
 }
