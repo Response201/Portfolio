@@ -1,7 +1,7 @@
 .container {
   position: relative;
-  height: clamp(150px, 100%, 100vh);
-  width: clamp(100vw, 100%, 100vh);
+  height: clamp(160px, 100%, 100vh);
+  width: clamp(160vw, 100%, 100vh);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,8 +10,8 @@
 }
 
 .content {
-  height: clamp(150px, 30vh, 300px);
-  aspect-ratio: 4/4;
+  height: 150px;
+  width: 150px;
   z-index: 0;
   animation: blobValue 70s ease infinite;
   overflow: hidden;
@@ -51,30 +51,47 @@
   top: 0;
 }
 
+
+
+
+
+
+
+
 @media (min-width: 768px) {
   .container {
     justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 5vh;
+    align-items: center;
+   
   }
 
-
   .content {
-    height: clamp(200px, 35vh, 300px);
+   
+    height: 200px;
+  width: 200px;
 
    
   }
 
 
+}
+
+@media (min-width: 1024px) {
+  
+
+  .content {
+   
+    height: 280px;
+  width: 280px;
+
+   
+  }
+
 
 }
-@media (min-width: 768px) {
-  .container {
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0vh;
-  }
-}
+
+
+
 
 @keyframes blobValue {
   0% {

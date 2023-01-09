@@ -6,7 +6,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  min-height: 450px;
+
 }
 
 .home___content {
@@ -18,7 +18,7 @@
   height: 100%;
   max-width: 1500px;
   overflow: hidden;
-  
+  min-height: 470px;
 }
 
 /* headings */
@@ -88,6 +88,18 @@ height: 100%;
     font-size: clamp(3em, 80vw, 4.5rem);
     line-height: clamp(3rem, 15vw, 5rem);
   }
+
+
+
+  .home___background_blob_container {
+ 
+    width: 45%;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+
+
 }
 
 @media (min-width: 1200px) {
@@ -129,5 +141,6 @@ height: 100%;
     height: 100%;
     width: 45%;
     align-items: flex-end;
+    justify-content: center;
   }
 }
