@@ -126,7 +126,7 @@ height: 100%;
   /* image + blob-background */
 
   .home___background_blob_container {
-    height: 60%;
+    height: 100%;
     width: 45%;
     align-items: flex-end;
   }
