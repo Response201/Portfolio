@@ -18,7 +18,7 @@ export const Card = ({ title,text, img, alt }) => {
       tiltMaxAngleY={10}
       perspective={1500}
       className={!img ? "card___section text" : "img card___section"}
-      style={{heigth:'100%', width:'100%'}}
+     
     >
      
 
