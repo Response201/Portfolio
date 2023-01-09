@@ -141,7 +141,7 @@ const SendMail = () => {
               </button>
             ) : (
               <button type="submit" className="dots">
-                {mailSent === "error" ? <MailNotSent /> : <p>Skicka</p>}
+                {mailSent === "error" ? <MailNotSent /> : <p>Send</p>}
               </button>
             )}
 

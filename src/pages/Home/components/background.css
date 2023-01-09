@@ -57,6 +57,16 @@
     align-items: flex-end;
     margin-bottom: 5vh;
   }
+
+
+  .content {
+    height: clamp(200px, 35vh, 300px);
+
+   
+  }
+
+
+
 }
 @media (min-width: 768px) {
   .container {
