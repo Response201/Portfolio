@@ -74,7 +74,7 @@ body {
   display: flex;
   align-items:center;
   background-color: var(--bg);
-  min-height: 510px;
+  min-height: 500px;
   overflow-y: scroll;
  
 
