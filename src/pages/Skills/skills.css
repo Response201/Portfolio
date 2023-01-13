@@ -23,7 +23,7 @@
  
 }
 .skills___content {
-  height: 49%;
+  height:100%;
   min-height: fit-content;
   width: 98%;
   display: grid;
@@ -62,11 +62,11 @@
 @media (min-width: 1024px) {
   .skills___content {
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   }
   .skills___section {
     color: var(--text-secondary);
-    height: 50%;
+    height: 60%;
     width: 90%;
   
     max-width: 550px;
