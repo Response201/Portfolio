@@ -1,10 +1,12 @@
 .about___container {
-  height: 90%;
+  height: 98%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  min-height: 450px;
 }
 
 .about___container h1 {
@@ -19,8 +21,8 @@
   color: var(--text-header);
   margin: 0;
   width: 100%;
-  height: 10%;
-  margin-bottom: 5%;
+  height: 5%;
+
 }
 
 .about___content {
@@ -38,21 +40,21 @@
   font-size: clamp(9px, calc(1vh), 19px);
   color: var(--text-secondary);
   height: fit-content;
-
   width: 90%;
   padding: 0%;
   margin-bottom: 1%;
   letter-spacing: 1.5px;
 }
 .about___section_text p {
-  font-size: clamp(9px, calc(1vw + 1vh), 19px);
-  line-height: clamp(11px, calc(1vw + 1vh), 25px);
+  font-size: clamp(10px, calc(0.7vw + 0.7vh), 19px);
+  line-height: clamp(10.5px, calc(0.7vw + 0.7vh), 25px);
 }
 
 .about___section_img {
   z-index: 100;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 98%;
   width: 98%;
   margin-top: 1%;
@@ -70,6 +72,7 @@
 @media (min-width: 1024px) {
   .about___content {
     width: 98%;
+    height: 96%;
     grid-template-columns: 1fr 1fr;
   }
   .about___section_text {
