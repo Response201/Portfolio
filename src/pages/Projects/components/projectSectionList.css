@@ -1,17 +1,17 @@
 .ProjectSection____container {
   height: 90%;
   max-height: 320px;
-  box-shadow: 1px 1px 5px black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   width: 95%;
   transition: 0.2s ease-in;
   border-radius: 15px;
   overflow: hidden;
   animation: fadeIn ease 5s;
+  box-shadow: 1px 1px 5px var(--shadow);
 }
 
 @keyframes fadeIn {
@@ -24,18 +24,20 @@
   }
 }
 
-/*  */
+/* image  */
 
-.imageAndUl___container {
-  height: 100%;
-  width: 100%;
+.image___container {
+  height: 99.55%;
+  width: 99.55%;
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
+  filter: var(--filter);
 }
 
 /* Text and Lottie  */
 
-.imageAndUl___textLottieBtn_container {
+.image___textLottieBtn_container {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -44,59 +46,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(4, 4, 4, 0.7);
+  background-color: rgba(4, 4, 4, 0.6);
   transition: 0.4s ease-in;
 }
-.imageAndUl___textLottieBtn_container:hover {
-  background-color: rgba(4, 4, 4, 0.2);
+.image___textLottieBtn_container:hover {
+  background-color: rgba(199, 199, 199, 0);
 }
 
 .ProjectSection____textLottieBtn_content {
-  margin-top: 5%;
-  width: 55%;
-  height: 100px;
+  margin-top: 0%;
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: unset;
+  z-index: 100;
 }
 
 .textLottieBtn____lottie {
   width: 100%;
+  max-width: 240px;
+  max-height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: ease-in 0.2s;
-}
-
-.textLottieBtn____lottie:hover {
-  width: 98%;
-}
-
-.textLottieBtn____p {
-  width: 100%;
-
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: -4%;
-  bottom: 0%;
-  z-index: 10;
-  height: 100%;
-  font-size: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  transition: ease-in 0.2s;
-}
-.textLottieBtn____p:hover {
-  font-size: 95%;
-}
-
-.textLottieBtn____p p {
-  width: 100%;
-  text-align: center;
 }

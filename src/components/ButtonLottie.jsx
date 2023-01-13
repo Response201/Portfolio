@@ -44,8 +44,6 @@ const ButtonLottie = ({ clickLottie, setClickLottie }) => {
   }, [clickLottie]);
 
   return (
-
-    
     <Lottie
       animationData={animation}
       progress={0}

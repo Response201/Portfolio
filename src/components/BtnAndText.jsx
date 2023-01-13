@@ -9,7 +9,7 @@ export const BtnAndText = ({ text }) => {
     setHoverLottie(true);
   };
   return (
-    <article className="btnAndText___container">
+
       <section className="btnAndText___content" onMouseEnter={onClickBtn}>
         <ButtonLottie
           clickLottie={hoverLottie}
@@ -18,6 +18,6 @@ export const BtnAndText = ({ text }) => {
 
         <p className="btnAndText___text"> {text} </p>
       </section>
-    </article>
+
   );
 };

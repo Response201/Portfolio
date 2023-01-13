@@ -3,7 +3,9 @@ import Tilty from "react-parallax-tilt";
 import "./card.css";
 import store from "../store";
 import { useSnapshot } from "valtio";
-export const Card = ({ title,text, img, alt }) => {
+import RainbowDiv from './RainbowDiv'
+import { BackgroundBlob } from "../components/BackgroundBlob";
+export const Card = ({ title,text, img }) => {
   const snap = useSnapshot(store);
 
   return (
@@ -11,7 +13,7 @@ export const Card = ({ title,text, img, alt }) => {
       transitionSpeed={1000}
       glareEnable={true}
       glareMaxOpacity={0.2}
-      glareColor="white"
+      glareColor={snap.glar}
       glarePosition="all"
       glareBorderRadius="13px"
       tiltMaxAngleX={5}
@@ -27,12 +29,12 @@ export const Card = ({ title,text, img, alt }) => {
 
    
         
-       
-            <div className="card_rainbow"> </div>
+       <RainbowDiv/>
+           
             <section className="card___text_container" >
             {title && <h1 className="card___h1_Title"> {title} </h1>}
             <section className={title ? "card___p_container" : ''}>
-             {text && text.map( item =>  <p className="card___p"> {item} </p> ) }
+             {text && text.map( item =>  <p className="card___p" key={item}> {item} </p> ) }
              </section>
             </section>
       
@@ -41,11 +43,10 @@ export const Card = ({ title,text, img, alt }) => {
       
         {img && (
           
-          < >
-            {" "}
-            <div className="card_rainbow rainbow_colorMix"> </div>{" "}
-            <img src={img} alt={alt} />{" "}
-          </>
+          
+           <BackgroundBlob image={img} />
+          
+         
         )}
        
     

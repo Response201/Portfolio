@@ -17,12 +17,15 @@ export const ThemeSwitch = () => {
 
     if (mode === "rgb(0,0,0)") {
       document.documentElement.setAttribute("data-theme", "rgb(0,0,0)");
+      store.glar = "rgb(255,255,255)"
     }
     if (mode === "rgb(243, 19, 190)") {
       document.documentElement.setAttribute("data-theme", "root");
+      store.glar = "rgb(243, 19, 190)"
     }
     if (mode === "rgb(51, 255, 255)") {
       document.documentElement.setAttribute("data-theme", "turquoise");
+      store.glar = 'rgb(255, 47, 0)'
     }
   }, [mode]);
 

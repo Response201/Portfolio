@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { BtnAndText } from "../../components/BtnAndText";
-import { Background } from "./components/Background";
+import { BackgroundBlob } from "../../components/BackgroundBlob";
+import image from "../../assets/image/header.png";
 import "./home.css";
 const Home = () => {
   const navigate = useNavigate();
@@ -19,15 +20,16 @@ const Home = () => {
               onClick={() => {
                 navigate("/mail");
               }}
+              className='btnAndText___container'
             >
-              <BtnAndText text="contact" className="btnAndText___text" />
+              <BtnAndText text="contact"  />
             </section>
           </section>
         </section>
 
         <section className="home___background_blob_container">
-          {" "}
-          <Background />
+         
+          <BackgroundBlob image={image} />
         </section>
       </section>
     </article>

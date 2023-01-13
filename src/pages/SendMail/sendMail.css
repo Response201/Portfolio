@@ -5,16 +5,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  min-height: 470px;
 }
 
 .email___section {
-  margin-top: 10%;
   position: relative;
-  height: 80%;
-  min-height: 400px;
-  max-height: 700px;
-  width: 95%;
+  height: 90%;
+  min-height: 350px;
+  max-height: 500px;
+  width: 100%;
   max-width: 550px;
   border-radius: 5px;
   overflow: hidden;
@@ -38,10 +37,10 @@
 }
 
 .email___form {
-  bottom: 0.3%;
-  left: 0.3%;
-  top: 0.3%;
-  right: 0.3%;
+  bottom: 0.5%;
+  left: 0.5%;
+  top: 0.5%;
+  right: 0.4%;
   position: absolute;
   padding-left: 1%;
   overflow: hidden;
@@ -50,9 +49,8 @@
   grid-template-rows: repeat(24, 1fr);
   background-color: var(--bg-form);
   border-radius: 5px;
-  border: 0.5px solid var(--shadow-border);
+
   z-index: 10;
-  
 }
 
 label {
@@ -228,8 +226,8 @@ textarea:invalid:focus {
 
   .email___section {
     margin: 0;
-    max-height: 700px;
-    max-width: 600px;
+    max-height: 600px;
+    max-width: 500px;
     padding-left: 0%;
   }
 }

@@ -1,0 +1,29 @@
+.card_rainbow {
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    var(--primary-two) 0%,
+    var(--complementary) 35%,
+    var(--primary-one) 50%,
+    var(--complementary) 65%
+  );
+  height:500%;
+  width: 500%;
+  top: calc(50% - 250%);
+  left: calc(50% - 250%);
+ opacity: 0.4;
+  animation: o-rotate-360 linear 10s infinite;
+}
+
+
+
+@keyframes o-rotate-360 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

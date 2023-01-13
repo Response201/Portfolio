@@ -1,0 +1,72 @@
+.resume___container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume___content {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+/* avatar */
+
+.resume___content_avatar {
+  height: 250px;
+  width: 310px;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+}
+
+.resume___content_line {
+  height: 2%;
+  width: 100vw;
+  left: 20px;
+  overflow: hidden;
+  position: absolute;
+  z-index:0;
+  bottom: 0;
+}
+
+.resume___content_cube {
+  height: 100vw;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/* CV - link + btn */
+.resume___content_cv {
+  all: unset;
+  height: fit-content;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: clamp(30px, 10vh, 35px);
+  text-decoration: underline;
+}
+.resume___content_cv h1 {
+  margin: 1rem 0;
+  font-size: clamp(23px, 5vh, 27px);
+  color: var(--text-secondary);
+  font-weight: 400;
+  text-decoration: underline;
+}
+.resume___download_a {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 15px;
+}
+@media (min-width: 900px) {
+  .resume___content_cv h1 {
+    font-weight: 800;
+  }
+}

@@ -10,6 +10,8 @@ import store from "./store";
 import SendMail from "./pages/SendMail/SendMail";
 import { About } from "./pages/About/About";
 import { Skills } from "./pages/Skills/Skills";
+import { Resume } from "./pages/Resume/Resume";
+
 
 export const App = () => {
 
@@ -38,9 +40,9 @@ export const App = () => {
 
       <section className="link___section_rigth">
         <div className="link___rigth_a_container">
-          <Link to="/" className="link___rigth_a">
+          <Link to="/resume" className="link___rigth_a">
             {" "}
-            Work{" "}
+            Resume{" "}
           </Link>
         </div>
         <div className="link___icons_container">
@@ -81,6 +83,7 @@ export const App = () => {
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/skills" element={<Skills />}></Route>
           <Route exact path="/mail" element={<SendMail />}></Route>
+          <Route exact path="/resume" element={<Resume />}></Route>
         </Routes>
       </section>
       <section className="link___section_bottom">

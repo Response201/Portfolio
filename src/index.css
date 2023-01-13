@@ -1,7 +1,7 @@
 :root {
   --bg: #e4e4e4;
   --bg-form: #e7e6e6f3;
-  --bg-card:#e7e6e6e0;
+  --bg-card: #e7e6e6e0;
   --form-input-valid: rgb(192, 17, 151);
   --shadow: #5801567f;
   --shadow-border: #f9d7f9;
@@ -10,15 +10,19 @@
   --primary-three: rgb(248, 236, 245);
   --complementary: rgb(47, 255, 0);
   --text: #1c7e1c;
-  --text-secondary:rgb(116, 9, 91);
+  --text-secondary: rgb(84, 7, 66);
   --text-header: rgb(243, 19, 190);
-  --text-btn-header:rgb(116, 9, 91);
+  --text-btn-header: rgb(104, 7, 81);
+  --text-font-roboto: "Roboto", sans-serif;
+  --text-font-rail: "Raleway Dots", cursive;
+  --filter: saturate(1) drop-shadow(2px 1px 5px #5801567f);
+ 
 }
 
 [data-theme="turquoise"] {
   --bg: #1f1f1f;
   --bg-form: #313131f0;
-  --bg-card:#313131e4;
+  --bg-card: #313131e4;
   --form-input-valid: rgb(38, 123, 125);
   --shadow: #003c3b93;
   --shadow-border: #d3d9d9;
@@ -27,10 +31,11 @@
   --primary-two: rgb(145, 218, 210);
   --primary-three: rgb(216, 223, 222);
   --text: rgb(204, 98, 62);
-  --text-secondary:rgb(43, 219, 219);
+  --text-secondary: rgb(43, 219, 219);
   --text-header: rgb(43, 219, 219);
-  --text-btn-header:rgb(103, 26, 12);
- 
+  --text-btn-header: rgb(79, 19, 9);
+  --filter: saturate(1) hue-rotate(10deg) brightness(0.85)
+    drop-shadow(2px 1px 5px rgb(81, 22, 1));
 
   /* rgb(60, 186, 188); */
 }
@@ -38,7 +43,7 @@
 [data-theme="rgb(0,0,0)"] {
   --bg: #eeeeee;
   --bg-form: #eeeeeef1;
-  --bg-card:#eeeeeeea;
+  --bg-card: #eeeeeeea;
   --form-input-valid: #717171;
   --shadow: #12121280;
   --shadow-border: #dedede80;
@@ -47,15 +52,15 @@
   --primary-three: rgb(240, 239, 239);
   --complementary: rgb(82, 82, 81);
   --text: rgb(48, 48, 48);
-  --text-secondary:#121212;
+  --text-secondary: #121212;
   --text-header: rgb(156, 156, 156);
-  --text-btn-header:#525151;
+  --text-btn-header: #525151;
+  --filter: brightness(100%) grayscale(100%) drop-shadow(2px 1px 5px rgb(72, 71, 71));
 }
 
 * {
   -ms-overflow-style: none;
   scrollbar-width: none;
-
 }
 
 *::-webkit-scrollbar {
@@ -64,7 +69,7 @@
 
 body {
   height: 100vh;
-  min-height:100vh;
+  min-height: 100vh;
   min-height: -webkit-fill-available;
   width: 100vw;
   margin: 0 auto;
@@ -72,16 +77,14 @@ body {
   overflow: hidden;
   background-color: transparent;
   display: flex;
-  align-items:center;
+  align-items: center;
   background-color: var(--bg);
   min-height: 500px;
   overflow-y: scroll;
- 
-
 }
 
 html {
   height: 100vh;
-  min-height:100vh;
+  min-height: 100vh;
   min-height: -webkit-fill-available;
 }

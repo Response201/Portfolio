@@ -1,8 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
-import "./background.css";
+import Tilty from "react-parallax-tilt";
+import "./backgroundBlob.css";
 import { useSnapshot } from "valtio";
-import store from "../../../store";
-export const Background = () => {
+import store from "../store";
+
+
+export const BackgroundBlob = ({image}) => {
   const [backgroundColor, setbackgroundColor] = useState("");
   const canvasRef = useRef(null);
   const snap = useSnapshot(store);
@@ -71,13 +74,19 @@ export const Background = () => {
   }, [snap.colors]); //
 
   return (
-    <section className="container">
-      <section className="content">
+    <article className="container">
+      <Tilty
+     tiltMaxAngleX={5}
+     tiltMaxAngleY={5}
+        className="content"
+      >
         <section className="blob___container">
           <canvas ref={canvasRef} className="blob"></canvas>
+
           <div className="container___overlay"></div>
         </section>
-      </section>
-    </section>
+        <img src={image} alt="" className="image" />
+      </Tilty>
+    </article>
   );
 };

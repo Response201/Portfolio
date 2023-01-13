@@ -6,8 +6,6 @@
   align-items: center;
   height: 100%;
   width: 100%;
-
-
 }
 
 .home___content {
@@ -20,7 +18,6 @@
   max-width: 1500px;
   overflow: hidden;
   min-height: 450px;
-
 }
 
 /* headings */
@@ -30,7 +27,7 @@
   justify-content: center;
   align-items: flex-start;
   height: 90%;
-  width: 100%;
+  width: fit-content;
 }
 
 .header___content {
@@ -48,30 +45,27 @@
   font-weight: 600;
   line-height: clamp(3rem, 15vw, 5rem);
   color: var(--text-header);
+  letter-spacing: 2px;
 }
-.header___content_p{
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+.header___content_p {
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
   padding: 0% auto;
-  margin: 1%;
+  margin: 1rem;
   text-align: center;
- 
+  letter-spacing: 1px;
+  padding: 0 15%;
 }
 
 /* button */
-.textLottieBtn {
-  position: relative;
-  height: 10%;
-  min-height: 30px;
-  width: 100vw;
-
-
+.btnAndText___container {
+  margin-top: 1rem;
+  width: 100%;
+  height: fit-content;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.text {
-  position: absolute;
-  top: 0;
-  font-size: 25px;
-}
-
 
 /* image + blob-background */
 
@@ -79,10 +73,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-height:100%;
-  width: 40%;
-  
-  
+  height: 100%;
+  width: 100%;
+  min-height: 160px;
 }
 
 @media (min-width: 768px) {
@@ -91,17 +84,11 @@ height:100%;
     line-height: clamp(3rem, 15vw, 5rem);
   }
 
-
-
   .home___background_blob_container {
- 
     width: 45%;
     align-items: flex-end;
     justify-content: center;
   }
-
-
-
 }
 
 @media (min-width: 1200px) {
@@ -131,11 +118,29 @@ height:100%;
     padding: 0;
     white-space: nowrap;
   }
-  .header___content p {
+
+  .header___content_p {
+    margin: 1%;
     text-align: left;
+    padding: 0%;
   }
 
-  
+  /* Button */
+  .btnAndText___container {
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+    max-width: 250px;
+    width: 60%;
+    height: 51%;
+  }
+
+  .btnAndText___text {
+    height: fit-content;
+    max-width: 250px;
+    width: 60%;
+    height: 51%;
+  }
 
   /* image + blob-background */
 

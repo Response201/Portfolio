@@ -1,0 +1,7 @@
+.cat {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  bottom: -21%;
+  z-index: 10;
+}

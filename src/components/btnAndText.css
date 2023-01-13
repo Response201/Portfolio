@@ -1,57 +1,28 @@
-.btnAndText___container {
-  width: 100%;
-  height: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .btnAndText___content {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  height: fit-content;
-  max-width: 250px;
-  width: 60%;
-  height: 51%;
   transition: ease-in 0.25s;
+  height: 50px;
+  width: 100%;
+  max-width: 250px;
 }
 .btnAndText___content:hover {
-transform: scale(95%);
+  transform: scale(95%);
 }
 
 .btnAndText___text {
- margin: 0;
-  top: 0%;
-  bottom: 0%;
+  margin: 0;
+  top: 15%;
+  width: 100%;
+  text-align: center;
   position: absolute;
   z-index: 10;
-  font-size: 23px;
+  font-size: 22px;
   color: var(--text-btn-header);
-
- 
- 
 }
 
-.btnAndText___text p{
- 
-   font-size: 25px;
-
- 
-  
-  
- }
-
-
-
-@media (min-width: 1200px) {
-  .btnAndText___container {
-
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-
+.btnAndText___text p {
+  font-size: 25%;
 }
