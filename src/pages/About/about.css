@@ -1,11 +1,10 @@
 .about___container {
-  height: 98%;
+  height: 90%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
   min-height: 450px;
 }
 
