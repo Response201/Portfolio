@@ -23,8 +23,7 @@
  
 }
 .skills___content {
-  height:50%;
-  min-height: fit-content;
+ 
   width: 98%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20px, 700px));
