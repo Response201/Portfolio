@@ -5,13 +5,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 450px;
+  min-height: 440px;
 }
 
 .about___container h1 {
   text-align: center;
   letter-spacing: 1vh;
-  font-size: clamp(3rem, 8vh, 5rem);
+  font-size: clamp(2.7rem, 8vh, 5rem);
   padding: 0 auto;
   font-family: "Pattaya", sans-serif;
   text-shadow: 1px 1px 1px #000, 2px 2px 5px var(--complementary);
@@ -25,14 +25,15 @@
 }
 
 .about___content {
-  height: 85%;
+  height: 90%;
   width: 98%;
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: center;
+  justify-content: space-between;
   place-items: center;
   max-width: 1800px;
-  padding: 0 1%;
+  padding: 0%;
+  margin: 0;
 }
 
 .about___section_text {
@@ -41,12 +42,12 @@
   height: fit-content;
   width: 90%;
   padding: 0%;
-  margin-bottom: 1%;
+  margin: 1% 0;
   letter-spacing: 1.5px;
 }
 .about___section_text p {
-  font-size: clamp(10px, calc(0.7vw + 0.7vh), 19px);
-  line-height: clamp(10.5px, calc(0.7vw + 0.7vh), 25px);
+  font-size: clamp(9px, calc(0.8vw + 0.8vh), 19px);
+  line-height: clamp(11px, calc(0.7vw + 0.7vh), 25px);
 }
 
 .about___section_img {
@@ -54,9 +55,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 98%;
+  height: 100%;
   width: 98%;
-  margin-top: 1%;
+  margin: 0%;
 }
 
 .about___section_img img {
@@ -71,7 +72,7 @@
 @media (min-width: 1024px) {
   .about___content {
     width: 98%;
-    height: 96%;
+    height: 90%;
     grid-template-columns: 1fr 1fr;
   }
   .about___section_text {
