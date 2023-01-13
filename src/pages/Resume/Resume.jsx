@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import cv from "../../assets/document/cv.pdf";
+import cv from "../../assets/document/CV.pdf";
 import { BtnAndText } from "../../components/BtnAndText";
 import { Eyes } from "./component/Eyes";
 import store from "../../store";
