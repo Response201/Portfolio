@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   min-height: 450px;
+  border-radius: 5px;
 }
 
 .email___section {
