@@ -21,7 +21,7 @@
   margin: 0;
   width: 100%;
   height: 5%;
-  margin-bottom: 5%;
+margin-bottom: 5%;
 
 }
 
@@ -74,9 +74,17 @@
 @media (min-width: 1024px) {
   .about___content {
     width: 98%;
-    height: 90%;
+    height: 100%;
     grid-template-columns: 1fr 1fr;
   }
+  .about___container h1 {
+
+    margin-bottom: 0%;
+  
+  
+  }
+
+
   .about___section_text {
     width: 98%;
     max-width: 550px;
