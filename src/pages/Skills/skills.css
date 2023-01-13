@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .skills___container_h1 {
@@ -23,7 +23,7 @@
  
 }
 .skills___content {
- height: 85%;
+ height: 90%;
   width: 98%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20px, 700px));
@@ -36,14 +36,16 @@
 }
 .skills___section {
   color: var(--text-secondary);
-  height: fit-content;
+  
+  min-height: fit-content;
   width: 100%;
   position: relative;
   padding: 0%;
+  
 }
 
 .skills___section h1 {
-  font-size: clamp(1rem, calc(1.5vw + 1.5vh), 1.8rem);
+  font-size: clamp(1rem, calc(1.2vw + 1.5vh), 1.8rem);
   letter-spacing: 0.8vh;
   padding: 0 auto;
   font-family: "Pattaya", sans-serif;
@@ -51,26 +53,27 @@
   font-weight: 600;
   color: var(--text-header);
   margin: 0;
-  height: 5%;
+ 
 }
 
 .skills___section p {
   font-size: clamp(12px, calc(1vw + 1vh), 18px);
   text-shadow: 0px 0px 1px var(--complementary);
   color: var(--text-secondary);
- 
+ height: 100%;
 }
 
 @media (min-width: 1024px) {
   .skills___content {
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    height: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
   }
   .skills___section {
     color: var(--text-secondary);
-    height: 60%;
+    height: 90%;
     width: 90%;
-  
+  max-height: 450px;
     max-width: 550px;
     position: relative;
   }
