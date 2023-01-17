@@ -19,7 +19,7 @@ const SendMail = () => {
   const onClickBtn = () => {
     setClickLottie(true);
   };
-
+/* check för att se att adressen är uppbyggt som en emailadress */
   useEffect(() => {
     const mail = adress
       .toLowerCase()
@@ -83,7 +83,7 @@ const SendMail = () => {
             <label
               className={validEmail !== null ? "validText" : "notValidText"}
             >
-              Epostadress:
+              Email address:
             </label>
             <input
               type="text"
@@ -101,7 +101,7 @@ const SendMail = () => {
             <label
               className={subject.length >= 1 ? "validText" : "notValidText"}
             >
-              Ämne:
+              Subject:
             </label>
             <input
               type="text"
@@ -110,6 +110,7 @@ const SendMail = () => {
               onChange={(event) => setSubject(event.target.value)}
               className="subject___input"
               maxLength={100}
+              minLength={5}
               required
             />
           </section>
@@ -118,7 +119,7 @@ const SendMail = () => {
             <label
               className={message.length >= 10 ? "validText" : "notValidText"}
             >
-              Meddelande:
+              Message:
             </label>
             <textarea
               id="message"

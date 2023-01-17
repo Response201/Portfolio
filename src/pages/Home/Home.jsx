@@ -22,7 +22,7 @@ const Home = () => {
               }}
               className='btnAndText___container'
             >
-              <BtnAndText text="contact"  />
+              <BtnAndText text="Contact"  />
             </section>
           </section>
         </section>

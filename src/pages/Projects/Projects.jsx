@@ -4,22 +4,22 @@ import './projects.css'
 const Projects = () => {
   const array = [
     {
-      name: "weather app",
+      name: "Weather app",
       url: "https://kolla-vadret.netlify.app/",
       imgName: "weather"
     },
     {
-      name: "coffee app",
+      name: "Grab a coffee",
       url: "https://grabacoffee.netlify.app/",
       imgName: "coffee"
     },
     {
-      name: "productivity app",
+      name: "Productivity app",
       url: "https://productivity-flow.netlify.app",
       imgName: "todo"
     },
     {
-      name: "recipe app",
+      name: "Foodnary",
       url: "https://foodnary.netlify.app",
       imgName: "foodnary"
     }

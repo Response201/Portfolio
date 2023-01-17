@@ -63,7 +63,7 @@ label {
 
 input[type="text"] {
   cursor: unset;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   font-size: 0.9rem;
   font-weight: 500;
   height: 40%;
@@ -79,7 +79,7 @@ input[type="text"] {
 }
 textarea {
   cursor: unset;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   font-size: 1.1rem;
   height: 100%;
   width: 95%;
