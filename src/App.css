@@ -8,7 +8,7 @@
   align-items: center;
   overflow: hidden;
   font-family: var(--text-font-roboto);
-  font-weight: 400;
+  font-weight: 200;
   color: var(--text);
   background-color: var(--bg);
   z-index: -10;
@@ -179,7 +179,7 @@ a {
 
 @media (min-width: 1024px) {
   .App {
-    font-weight: 800;
+    font-weight: 400;
     font-family: var(--text-font-rail);
   }
 }

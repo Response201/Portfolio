@@ -48,8 +48,10 @@ margin-bottom: 5%;
   letter-spacing: 1.5px;
 }
 .about___section_text p {
-  font-size: clamp(10px, calc(1vw + 1vh), 19px);
   line-height: clamp(11px, calc(1vw + 1vh), 24px);
+  font-weight: 500;
+  font-family: var(--text-font-roboto);
+  font-size: clamp(12px, calc(0.6vw + 0.5vh), 23px);
 }
 
 .about___section_img {
@@ -76,12 +78,19 @@ margin-bottom: 5%;
     width: 98%;
     height: 100%;
     grid-template-columns: 1fr 1fr;
+    
   }
   .about___container h1 {
 
     margin-bottom: 0%;
   
   
+  }
+  .about___section_text p {
+   
+    font-weight: 600;
+    font-family: var( --text-font-rail);
+   
   }
 
 

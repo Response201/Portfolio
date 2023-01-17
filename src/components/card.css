@@ -9,6 +9,7 @@
   position: relative;
   overflow: hidden;
   margin-top: 1%;
+ 
 }
 
 .text {
@@ -59,6 +60,8 @@
   padding: 2%;
   text-align: center;
   margin: 0;
+
+
 }
 
 .card___p_container {
@@ -66,6 +69,8 @@
   height: 55%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  
 }
 
 @media (min-width: 768px) and (min-height: 500px) {

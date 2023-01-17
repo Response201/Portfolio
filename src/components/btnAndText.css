@@ -20,11 +20,17 @@
   text-align: center;
   position: absolute;
   z-index: 10;
-  font-size: 22px;
+  font-size: 20px;
   color: var(--text-btn-header);
   overflow: hidden;
+  font-weight: 600;
+  font-family: var(--text-font-roboto);
 }
 
-.btnAndText___text p {
-  font-size: 25%;
+
+@media (min-width:1200px) {
+  .btnAndText___text {
+    font-weight: 600;
+    font-family: var(--text-font-rail);
+  }
 }

@@ -14,7 +14,7 @@
   --text-header: rgb(243, 19, 190);
   --text-btn-header: rgb(104, 7, 81);
   --text-font-roboto: "Roboto", sans-serif;
-  --text-font-rail: "Raleway Dots", cursive;
+  --text-font-rail:   'Raleway', sans-serif;
   --filter: saturate(1) drop-shadow(2px 1px 5px #5801567f);
  
 }
