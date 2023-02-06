@@ -17,8 +17,9 @@ const SendMail = () => {
   const url = `https://backend-recipe-ect.herokuapp.com/send`;
 
   const onClickBtn = () => {
-    setClickLottie(true);
+    setHoverLottie(true);
   };
+  
 /* check för att se att adressen är uppbyggt som en emailadress */
   useEffect(() => {
     const mail = adress
