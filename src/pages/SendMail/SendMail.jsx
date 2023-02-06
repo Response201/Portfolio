@@ -19,7 +19,7 @@ const SendMail = () => {
   const onClickBtn = () => {
     setHoverLottie(true);
   };
-  
+
 /* check för att se att adressen är uppbyggt som en emailadress */
   useEffect(() => {
     const mail = adress
@@ -79,7 +79,7 @@ const SendMail = () => {
   return (
     <article className="email___form_container">
       <section className="email___section">
-        <form  className="email___form">
+        <form  className="email___form" >
           <section className="adress___section">
             <label
               className={validEmail !== null ? "validText" : "notValidText"}
@@ -135,14 +135,14 @@ const SendMail = () => {
           </section>
           <section
             className={showBtn ? "submit___input" : "submit___input_hidden"}
-            onMouseEnter={onClickBtn}
+            onMouseEnter={onClickBtn} onClick={handleSubmit} 
           >
             {loading ? (
               <button >
                 <LoadingDots />
               </button>
             ) : (
-              <button onClick={handleSubmit} className="dots">
+              <button className="dots">
                 {mailSent === "error" ? <MailNotSent /> : <p>Send</p>}
               </button>
             )}
