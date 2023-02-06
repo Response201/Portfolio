@@ -78,7 +78,7 @@ const SendMail = () => {
   return (
     <article className="email___form_container">
       <section className="email___section">
-        <form onSubmit={handleSubmit} className="email___form">
+        <form  className="email___form">
           <section className="adress___section">
             <label
               className={validEmail !== null ? "validText" : "notValidText"}
@@ -137,11 +137,11 @@ const SendMail = () => {
             onMouseEnter={onClickBtn}
           >
             {loading ? (
-              <button type="submit">
-                <LoadingDots />{" "}
+              <button >
+                <LoadingDots />
               </button>
             ) : (
-              <button type="submit" className="dots">
+              <button onClick={handleSubmit} className="dots">
                 {mailSent === "error" ? <MailNotSent /> : <p>Send</p>}
               </button>
             )}
