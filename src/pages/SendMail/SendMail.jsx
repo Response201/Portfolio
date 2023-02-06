@@ -40,7 +40,7 @@ const SendMail = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (message.length >= 10 && validEmail !== null && subject) {
+    if (showBtn) {
       setLoading(true);
       fetch(url, {
         method: "POST",
